@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "sorcerycraft:spell"
+    },
+    "title": {
+      "translate": "advancements.sorcerycraft.adventure.discover_spell.title"
+    },
+    "description": {
+      "translate": "advancements.sorcerycraft.adventure.discover_spell.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sorcerycraft:spell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sorcerycraft:spell"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "sorcerycraft:spell",
+      "sorcerycraft:casting_table"
+    ]
+  }
+}

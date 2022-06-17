@@ -1,0 +1,17 @@
+{
+  "name": "Teleport",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Teleport",
+      "text": "Cost: Lv1 = Spell + Ender Pearl / Lv2 = Spell + Chorus Fruit / Lv3 = Spell + Chorus Flower$(br2)Max Level: 3$(br2)XP Cost: Lv1 = 12 / Lv2 = 18 / Lv3 = 24$(br2)The ultimate spell for clearing out those annoying players and mobs, it will send them randomly away from you"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will randomly teleport them away from you in order to leave you alone. $(br)However, the higher level of the spell, the further the range that will be randomly teleported away in"
+    }
+  ]
+}

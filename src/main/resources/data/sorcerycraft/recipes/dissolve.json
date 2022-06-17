@@ -1,0 +1,23 @@
+{
+  "type": "sorcerycraft:ritual_recipe",
+  "cost": [
+    {
+      "item": "clock"
+    },
+    {
+      "item": "sorcerycraft:spell"
+    }
+  ],
+  "result": {
+    "item": "sorcerycraft:spell",
+    "data": {
+      "Spells": [
+        {
+          "id": "sorcerycraft:dissolve_spell",
+          "level": 0
+        }
+      ]
+    }
+  },
+  "xpCost": 8
+}

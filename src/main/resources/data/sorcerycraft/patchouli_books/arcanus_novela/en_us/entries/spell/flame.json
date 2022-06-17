@@ -1,0 +1,17 @@
+{
+  "name": "Flame",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Flame",
+      "text": "Cost: Lv1 = Spell + Flint and Steel / Lv2 = Spell + Fire Charge $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 8 / Lv2 = 12$(br2)Your go-to for combat and cooking food. The flame spell has useful utility within and out of combat"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will be lit on fire (The higher the level of the spell, the longer they will be on fire).$(br)If the spell hits a block, it will light it on fire, or if it has the ability to be 'lit' (E.g. Campfires), it will light them on fire"
+    }
+  ]
+}

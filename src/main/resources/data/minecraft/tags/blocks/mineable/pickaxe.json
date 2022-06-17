@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sorcerycraft:crystal_ore",
+    "sorcerycraft:hallowed_iron",
+    "sorcerycraft:crystalised_redstone_block",
+    "sorcerycraft:drained_crystalised_redstone_block"
+  ]
+}

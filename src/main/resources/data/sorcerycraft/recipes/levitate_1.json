@@ -1,0 +1,23 @@
+{
+  "type": "sorcerycraft:ritual_recipe",
+  "cost": [
+    {
+      "item": "shulker_shell"
+    },
+    {
+      "item": "sorcerycraft:spell"
+    }
+  ],
+  "result": {
+    "item": "sorcerycraft:spell",
+    "data": {
+      "Spells": [
+        {
+          "id": "sorcerycraft:levitate_spell",
+          "level": 0
+        }
+      ]
+    }
+  },
+  "xpCost": 12
+}

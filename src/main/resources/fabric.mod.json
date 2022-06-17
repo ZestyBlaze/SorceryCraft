@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "sorcerycraft",
+  "version": "${version}",
+
+  "name": "SorceryCraft - Dispelled",
+  "description": "Create Spells and Cast them in a Vanilla-esque style!",
+  "authors": [
+    "ZestyBlaze",
+    "Lunar"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/ZestyBlaze/SorceryCraft",
+    "issues": "https://github.com/ZestyBlaze/SorceryCraft/issues"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/sorcerycraft/textures/item/spell.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.zestyblaze.sorcerycraft.SorceryCraft"
+    ],
+    "client": [
+      "net.zestyblaze.sorcerycraft.client.SCClient"
+    ],
+    "modmenu": [
+      "net.zestyblaze.sorcerycraft.integration.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "sorcerycraft.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17",
+    "cloth-config2": ">=6.1.48"
+  }
+}

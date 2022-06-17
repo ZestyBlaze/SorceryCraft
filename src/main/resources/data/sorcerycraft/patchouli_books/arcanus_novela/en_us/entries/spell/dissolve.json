@@ -1,0 +1,17 @@
+{
+  "name": "Dissolve",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Dissolve",
+      "text": "Cost: Spell + Clock$(br2)Max Level: 1$(br2)XP Cost: 8$(br2)A easy spell to make and use, when striking an entity, it will clear them of all status effects"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a projectile will be thrown from your body, upon striking another entity, it will clear all effects from them, good or bad.$(br)This spell could easily have combat practicality since you could clear your enemies beneficial effects"
+    }
+  ]
+}

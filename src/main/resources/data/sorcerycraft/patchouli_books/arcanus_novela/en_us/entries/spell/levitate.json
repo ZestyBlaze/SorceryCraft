@@ -1,0 +1,17 @@
+{
+  "name": "Levitate",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Levitate",
+      "text": "Cost: Lv1 = Spell + Shulker Shell / Lv2 = Spell + Elytra $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 12 / Lv2 = 24$(br2)One of the harder spells to craft but extremely useful for clearing away annoying and pesky players and mobs!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will grant them the Potion Effect 'Levitation' (The higher level the spell is, the longer the status effect will be granted for)."
+    }
+  ]
+}

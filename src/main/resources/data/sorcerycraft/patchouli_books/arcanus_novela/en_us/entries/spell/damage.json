@@ -1,0 +1,17 @@
+{
+  "name": "Damage",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Damage",
+      "text": "Cost: Lv1 = Spell + Magma Block / Lv2 = Spell + Wither Rose $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 4 / Lv2 = 8$(br2)The most basic combat spell at your disposal, fairly easy to craft but powerful"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a spell projectile will be cast and any entity struck with the projectile will be inflicted with Instant Harm.$(br2)The higher level that the spell is, the more damage the spell will cause to the entity it hits (Does not work on Undead mobs)"
+    }
+  ]
+}

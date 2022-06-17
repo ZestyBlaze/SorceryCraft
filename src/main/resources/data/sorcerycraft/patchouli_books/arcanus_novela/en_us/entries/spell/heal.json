@@ -1,0 +1,17 @@
+{
+  "name": "Heal",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Heal",
+      "text": "Cost: Lv1 = Spell + White Bed / Lv2 = Spell + Ghast Tear $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 4 / Lv2 = 8$(br2)The ultimate spell for keeping your allies alive during combat or healing your pets!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will apply Instant Health to the target that it hit. $(br)Depending on the level of the spell, will depend on how much health the target will gain. The higher the level of the spell, the more health the target will gain"
+    }
+  ]
+}

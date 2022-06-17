@@ -1,0 +1,23 @@
+{
+  "type": "sorcerycraft:ritual_recipe",
+  "cost": [
+    {
+      "item": "ender_eye"
+    },
+    {
+      "item": "sorcerycraft:spell"
+    }
+  ],
+  "result": {
+    "item": "sorcerycraft:spell",
+    "data": {
+      "Spells": [
+        {
+          "id": "sorcerycraft:inward_spell",
+          "level": 0
+        }
+      ]
+    }
+  },
+  "xpCost": 16
+}

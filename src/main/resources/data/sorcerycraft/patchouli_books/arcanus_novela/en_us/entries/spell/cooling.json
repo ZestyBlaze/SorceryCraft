@@ -1,0 +1,17 @@
+{
+  "name": "Cooling",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Cooling",
+      "text": "Cost: Spell + Ice$(br2)Max Level: 1$(br2)XP Cost: 10$(br2)A simple spell to cast, this spell will put out blocks or entities on fire or un-light blocks that are Lit (E.g. Campfires)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a freezing spell projectile will be thrown from your scroll. Upon the projectile striking an entity, it will cool down any flames that may surround them.$(br)When striking a block, if it is lit or on fire, the cooling hit from your spell will put it out in a second"
+    }
+  ]
+}

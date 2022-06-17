@@ -1,0 +1,17 @@
+{
+  "name": "Steadfast",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Steadfast",
+      "text": "Cost: Spell + Netherite Ingot$(br2)Max Level: 1$(br2)XP Cost: 18$(br2)A easy spell to make and use and what will be the most important one you use, when striking an entity, it will give you the 'Steadfast' potion effect"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a projectile will be thrown from your body, upon striking another entity, it will grant you the Steadfast effect. While under this effect, it will cause every one of your spells to be able to be cast without fail for the whole duration of the potion effect"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "sorcerycraft:ritual_recipe",
+  "cost": [
+    {
+      "item": "minecraft:ice"
+    },
+    {
+      "item": "sorcerycraft:spell"
+    }
+  ],
+  "result": {
+    "item": "sorcerycraft:spell",
+    "data": {
+      "Spells": [
+        {
+          "id": "sorcerycraft:cooling_spell",
+          "level": 0
+        }
+      ]
+    }
+  },
+  "xpCost": 10
+}

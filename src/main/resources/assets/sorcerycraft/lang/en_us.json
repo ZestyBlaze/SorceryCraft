@@ -1,0 +1,56 @@
+{
+    "itemGroup.sorcerycraft.spells": "SorceryCraft - Dispelled",
+
+    "item.sorcerycraft.arcanus_novela": "Arcanus Novela",
+    "item.sorcerycraft.crystal": "Crystal",
+    "item.sorcerycraft.crystalised_redstone": "Crystalised Redstone",
+    "item.sorcerycraft.spell": "Spell",
+
+    "block.sorcerycraft.crystal_ore": "Crystal Ore",
+    "block.sorcerycraft.hallowed_iron": "Hallowed Iron",
+    "block.sorcerycraft.crystalised_redstone_block": "Crystalised Redstone Block",
+    "block.sorcerycraft.drained_crystalised_redstone_block": "Drained Crystalised Redstone Block",
+
+    "chat.sorcerycraft.discovered_spell": "%s has discovered the spell %s",
+
+    "entity.sorcerycraft.spell": "Spell",
+
+    "effect.sorcerycraft.inward": "Inward",
+    "effect.sorcerycraft.steadfast": "Steadfast",
+
+    "command.sorcerycraft.spell.forgotten_spell": "%s has forgotten the spell %s",
+    "command.sorcerycraft.spell.listing_spells": "%s has discovered the following spells: %s",
+    "command.sorcerycraft.spell.unknown_spell": "Unknown spell: %s",
+    "command.sorcerycraft.spell.not_holding_spell": "%s is not holding a spell",
+    "command.sorcerycraft.spell.applied_spell": "Applied Spell %s",
+    "command.sorcerycraft.spell.removed_spell": "Removed Spell %s",
+
+    "stat.sorcerycraft.interact_with_casting_table": "Interactions with Casting Table",
+    "stat.sorcerycraft.cast_spell": "Spells Cast",
+
+    "text.sorcerycraft.guide_book.fail": "Install Patchouli for this",
+
+    "text.autoconfig.sorcerycraft.title": "SorceryCraft Config",
+    "text.autoconfig.sorcerycraft.option.failureChance": "Spell Failure Chance",
+
+    "advancements.sorcerycraft.adventure.discover_spell.title": "Witchcraft!",
+    "advancements.sorcerycraft.adventure.discover_spell.description": "Discover a spell",
+    "advancements.sorcerycraft.adventure.create_spell.title": "Spellbinding!",
+    "advancements.sorcerycraft.adventure.create_spell.description": "Create a spell using the power of a Ritual Circle",
+    "advancements.sorcerycraft.adventure.discover_all_spells.title": "Master of Magic!",
+    "advancements.sorcerycraft.adventure.discover_all_spells.description": "Discover all spells",
+
+    "ritual.none": "Not a valid ritual",
+    "ritual.invalidXp": "Not enough XP to conduct",
+
+    "spell.sorcerycraft.damage_spell": "Damage",
+    "spell.sorcerycraft.heal_spell": "Heal",
+    "spell.sorcerycraft.dissolve_spell": "Dissolve",
+    "spell.sorcerycraft.steadfast_spell": "Steadfast",
+    "spell.sorcerycraft.flame_spell": "Flame",
+    "spell.sorcerycraft.levitate_spell": "Levitate",
+    "spell.sorcerycraft.teleport_spell": "Teleport",
+    "spell.sorcerycraft.inward_spell": "Inward",
+    "spell.sorcerycraft.cooling_spell": "Cooling",
+    "spell.sorcerycraft.lightning_spell": "Lightning"
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "sorcerycraft:adventure/discover_spell",
+  "display": {
+    "icon": {
+      "item": "sorcerycraft:hallowed_iron"
+    },
+    "title": {
+      "translate": "advancements.sorcerycraft.adventure.create_spell.title"
+    },
+    "description": {
+      "translate": "advancements.sorcerycraft.adventure.create_spell.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sorcerycraft:hallowed_iron": {
+      "trigger": "sorcerycraft:create_spell"
+    }
+  }
+}

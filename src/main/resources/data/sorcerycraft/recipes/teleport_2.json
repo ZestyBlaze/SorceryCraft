@@ -1,0 +1,23 @@
+{
+  "type": "sorcerycraft:ritual_recipe",
+  "cost": [
+    {
+      "item": "chorus_fruit"
+    },
+    {
+      "item": "sorcerycraft:spell"
+    }
+  ],
+  "result": {
+    "item": "sorcerycraft:spell",
+    "data": {
+      "Spells": [
+        {
+          "id": "sorcerycraft:teleport_spell",
+          "level": 1
+        }
+      ]
+    }
+  },
+  "xpCost": 18
+}

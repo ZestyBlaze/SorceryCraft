@@ -1,0 +1,115 @@
+plugins {
+	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'maven-publish'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+archivesBaseName = project.archives_base_name
+version = project.mod_version
+group = project.maven_group
+
+repositories {
+	maven {
+		name "Cloth Config"
+		url "https://maven.shedaniel.me/"
+	}
+
+	maven {
+		name "Modmenu"
+		url "https://maven.terraformersmc.com/"
+	}
+
+	maven {
+		name "Parchment"
+		url "https://maven.parchmentmc.org"
+	}
+
+	maven {
+		name "Siphalor's Maven"
+		url "https://maven.siphalor.de"
+	}
+
+	maven {
+		name "Jitpack"
+		url "https://jitpack.io"
+	}
+
+	maven {
+		name "Patchouli"
+		url "https://maven.blamejared.com"
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	//Parchment
+	mappings loom.layered() {
+		officialMojangMappings()
+		parchment("org.parchmentmc.data:parchment-1.18.2:2022.05.02@zip")
+	}
+
+	//Cloth Config
+	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
+		exclude (group: "net.fabricmc.fabric-api") }
+
+	//Modmenu
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}") {
+		exclude group: "net.fabricmc.fabric-api" }
+
+	//NBTCrafting
+	modImplementation("de.siphalor:nbtcrafting-1.18:${project.nbtcrafting_version}")
+	include("de.siphalor:nbtcrafting-1.18:${project.nbtcrafting_version}")
+
+	//Patchouli
+	modImplementation("vazkii.patchouli:Patchouli:${project.patchouli_version}")
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 17
+}
+
+java {
+	withSourcesJar()
+}
+
+jar {
+	from("CODE_LICENSE") {
+		rename { "${it}_${project.archivesBaseName}"}
+	}
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+
+	repositories {
+		if(System.getenv("MAVEN_REPO") != null) {
+			maven {
+				//url 'https://maven.concern.i.ng/releases'
+				url System.getenv("MAVEN_REPO")
+				credentials {
+					username = System.getenv("MAVEN_USERNAME")
+					password = System.getenv("MAVEN_PASSWORD")
+					//username 'zestyblaze'
+					//password 'bXjiUThwtv3nqGxV2ka4J7628nWkT5c7u2RYlOIMTYPrbYtxUyUa63ighyEiX2aV'
+				}
+			}
+		}
+	}
+}

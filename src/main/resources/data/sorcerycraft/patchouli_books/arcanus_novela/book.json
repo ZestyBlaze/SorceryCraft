@@ -1,0 +1,9 @@
+{
+  "name": "Arcanus Novela",
+  "landing_text": "Welcome to SorceryCraft - Dispelled! A revival of the old 1.16 magic mod! Here in the Arcanus Novela you will find all the information you will need to know about the mod and more!",
+  "show_progress": false,
+  "dont_generate_book": true,
+  "book_texture": "patchouli:textures/gui/book_purple.png",
+  "custom_book_item": "sorcerycraft:arcanus_novela",
+  "version": 1
+}

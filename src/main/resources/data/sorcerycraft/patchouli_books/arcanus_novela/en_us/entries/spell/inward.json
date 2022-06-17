@@ -1,0 +1,17 @@
+{
+  "name": "Inward",
+  "icon": "sorcerycraft:spell",
+  "category": "sorcerycraft:spell",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:spell",
+      "title": "Inward",
+      "text": "Cost: Spell + Ender Eye$(br2)Max Level: 1$(br2)XP Cost: 16$(br2)A easy spell to make and use, when striking an entity, it will give them the 'Inward' status effect"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When you cast the spell, a projectile will be thrown from your body, upon striking another entity, it will give them the 'Inward' status effect, a very useful effect for combat against other mages as it causes all of their successful spells to forcefully hit themselves"
+    }
+  ]
+}

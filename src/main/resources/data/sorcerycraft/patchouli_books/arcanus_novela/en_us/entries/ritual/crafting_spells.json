@@ -1,0 +1,15 @@
+{
+  "name": "Spell Crafting",
+  "icon": "sorcerycraft:crystalised_redstone",
+  "category": "sorcerycraft:ritual",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Now you have got a Ritual Circle built, you'll want to light all the candles in the circle, once you do that, we can begin the fun!$(br)Find the Spell you want to craft in the book and it will tell you the ingredients that you need for that spell under the title 'Cost'"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Once you have the ingredients, throw them together in the circle along the gold and right click the Hallowed Iron in the centre with an empty hand. The items you just put in should disappear in a cloud of smoke and the spell you just crafted with appear above the hallowed iron.$(br)After the ritual, the crystals will be drained and the candles will be snuffed out, reset these to start a new ritual."
+    }
+  ]
+}
