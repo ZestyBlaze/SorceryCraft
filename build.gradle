@@ -101,13 +101,10 @@ publishing {
 	repositories {
 		if(System.getenv("MAVEN_REPO") != null) {
 			maven {
-				//url 'https://maven.concern.i.ng/releases'
 				url System.getenv("MAVEN_REPO")
 				credentials {
 					username = System.getenv("MAVEN_USERNAME")
 					password = System.getenv("MAVEN_PASSWORD")
-					//username 'zestyblaze'
-					//password 'bXjiUThwtv3nqGxV2ka4J7628nWkT5c7u2RYlOIMTYPrbYtxUyUa63ighyEiX2aV'
 				}
 			}
 		}
