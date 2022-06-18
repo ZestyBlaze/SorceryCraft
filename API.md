@@ -5,16 +5,11 @@
     ```gradle
     maven {
     name = "SorceryCraft"
-    url "https://cursemaven.com"
-    content {
-        includeGroup "curse.maven"
-    }
-   
+    url "https://maven.concern.i.ng/releases"
+
    dependencies {
-   modApi 'curse.maven:sorcery-622006:LATEST'
-   //Optional but handy
-   include("curse.maven:sorcery-622006:LATEST")
-   // LATEST = ID of the file on Curseforge for the version you would like to use 
+   modApi "net.zestyblaze:Sorcery:LATEST"
+   LATEST = Latest mod version available on Curseforge for target version
    }
     ```
 2. Add Dependency to ```fabric.mod.json```
