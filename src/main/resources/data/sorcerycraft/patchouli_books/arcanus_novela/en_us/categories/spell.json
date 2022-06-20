@@ -1,6 +1,6 @@
 {
   "name": "Spells",
-  "description": "In this category, you'll find all the information you need about each individual spell in the mod!",
+  "description": "In $(sorcerycraft), you practice magic with rituals and $(spell). $(br2)$(spell) take the form of scrolls and are $(bold)one-time use only.$() You do have to craft them again to profit the benefit of the spell once more. $(br)Please note $(bold)XP Cost$() is expressed in $(bold)Levels$() and not Points.",
   "icon": "sorcerycraft:spell",
   "sortnum": "1"
 }

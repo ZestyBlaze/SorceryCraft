@@ -7,11 +7,11 @@
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:spell",
       "title": "Lightning",
-      "text": "Cost: Spell + End Rod$(br2)Max Level: 1$(br2)XP Cost: 18$(br2)A powerful combat spell, upon being struck by a lightning projectile and the spell succeeds, the spell will strike you with a bolt of lighting"
+      "text": "$(bold)COST: $(spell) + $(#AC8C0B)End Rod$()$(br2)$(bold)MAX LEVEL:$() $(#green)1$()$(br2)$(bold)XP COST:$() $(#green)18$()$(br2)$(italic)''A powerful combat spell, upon being struck by a lightning projectile and the spell succeeds, the spell will strike you with a bolt of lighting''$()"
     },
     {
       "type": "patchouli:text",
-      "text": "When you cast the spell, a projectile will be cast from the scroll. Once it hits a player or a block, it will strike lightning where they stand. Major damage in a matter of seconds!"
+      "text": "When you cast $(#AC8C0B)$(bold)Lightning$(), a charged projectile will be cast from the scroll. $(br2)Once the $(#AC8C0B)$(bold)Lightning$() hits a player or a block, it will strike lightning where they stand. $(br2)This will cause major damage in a matter of seconds! $(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
     }
   ]
 }
