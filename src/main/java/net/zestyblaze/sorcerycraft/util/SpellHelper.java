@@ -1,4 +1,4 @@
-package net.zestyblaze.sorcerycraft.util.spell;
+package net.zestyblaze.sorcerycraft.util;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
@@ -16,7 +16,6 @@ import net.zestyblaze.sorcerycraft.SorceryCraft;
 import net.zestyblaze.sorcerycraft.api.Spell;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 import net.zestyblaze.sorcerycraft.registry.SCCriteriaInit;
-import net.zestyblaze.sorcerycraft.util.SoundUtil;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;

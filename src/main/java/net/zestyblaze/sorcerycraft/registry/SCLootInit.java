@@ -9,7 +9,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.providers.number.BinomialDistributionGenerator;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.util.spell.RandomSpellLootTableFunction;
+import net.zestyblaze.sorcerycraft.util.RandomSpellLootTableFunction;
 
 public class SCLootInit {
     public static final ResourceLocation[] LOOT_TABLES = new ResourceLocation[]{

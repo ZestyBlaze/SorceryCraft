@@ -1,4 +1,4 @@
-package net.zestyblaze.sorcerycraft.util.spell;
+package net.zestyblaze.sorcerycraft.util;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;

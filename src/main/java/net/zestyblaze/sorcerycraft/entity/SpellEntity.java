@@ -24,7 +24,7 @@ import net.zestyblaze.sorcerycraft.config.SCModConfig;
 import net.zestyblaze.sorcerycraft.registry.SCEntityInit;
 import net.zestyblaze.sorcerycraft.registry.SCItemInit;
 import net.zestyblaze.sorcerycraft.registry.SCMobEffectInit;
-import net.zestyblaze.sorcerycraft.util.spell.SpellHelper;
+import net.zestyblaze.sorcerycraft.util.SpellHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

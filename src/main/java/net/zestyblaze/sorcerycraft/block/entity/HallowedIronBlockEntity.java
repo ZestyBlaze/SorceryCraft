@@ -26,7 +26,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.zestyblaze.sorcerycraft.network.SpawnSmokeParticlesPacket;
-import net.zestyblaze.sorcerycraft.recipe.RitualRecipe;
+import net.zestyblaze.sorcerycraft.api.RitualRecipe;
 import net.zestyblaze.sorcerycraft.registry.SCBlockEntityInit;
 import net.zestyblaze.sorcerycraft.registry.SCCriteriaInit;
 import net.zestyblaze.sorcerycraft.registry.SCRecipeInit;

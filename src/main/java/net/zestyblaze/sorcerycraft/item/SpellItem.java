@@ -18,7 +18,7 @@ import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 import net.zestyblaze.sorcerycraft.entity.SpellEntity;
 import net.zestyblaze.sorcerycraft.registry.SCStatInit;
 import net.zestyblaze.sorcerycraft.util.SoundUtil;
-import net.zestyblaze.sorcerycraft.util.spell.SpellHelper;
+import net.zestyblaze.sorcerycraft.util.SpellHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;

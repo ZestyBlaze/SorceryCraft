@@ -10,8 +10,8 @@ import net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.util.spell.SpellHelper;
-import net.zestyblaze.sorcerycraft.util.spell.SpellPlayerEntity;
+import net.zestyblaze.sorcerycraft.util.SpellHelper;
+import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
 
 @SuppressWarnings("deprecation")
 public class UpdateKnownSpellsS2CPacket {

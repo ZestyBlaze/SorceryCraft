@@ -1,4 +1,4 @@
-package net.zestyblaze.sorcerycraft.util.spell;
+package net.zestyblaze.sorcerycraft.util;
 
 import net.minecraft.resources.ResourceLocation;
 

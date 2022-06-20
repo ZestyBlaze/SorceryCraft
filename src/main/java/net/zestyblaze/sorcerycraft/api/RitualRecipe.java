@@ -1,4 +1,4 @@
-package net.zestyblaze.sorcerycraft.recipe;
+package net.zestyblaze.sorcerycraft.api;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
