@@ -7,11 +7,11 @@
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:spell",
       "title": "Teleport",
-      "text": "Cost: Lv1 = Spell + Ender Pearl / Lv2 = Spell + Chorus Fruit / Lv3 = Spell + Chorus Flower$(br2)Max Level: 3$(br2)XP Cost: Lv1 = 12 / Lv2 = 18 / Lv3 = 24$(br2)The ultimate spell for clearing out those annoying players and mobs, it will send them randomly away from you"
+      "text": "$(bold)COST: Lv1 = $(spell) + $(#044331)Ender Pearl$() $(br)$(bold)Lv2 = $(spell) + $(#71014E)Chorus Fruit$()$(br)$(bold)Lv3 = $(spell) + $(#C6028B)Chorus Flower$()$(br2)$(bold)MAX LEVEL:$() $(#green)3$()$(br2)$(bold)XP COST:$() 【 Lv1 = $(#green)12$() 】•【 Lv2 = $(#green)18$() 】•【 Lv3 = $(#green)24$() 】$(br2)$(italic)''The ultimate spell for clearing out your path, teleport ennemies away from you.''$()"
     },
     {
       "type": "patchouli:text",
-      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will randomly teleport them away from you in order to leave you alone. $(br)However, the higher level of the spell, the further the range that will be randomly teleported away in"
+      "text": "When you cast $(#9714CB)$(bold)Teleport$(), a small quantum projectile is cast from your scroll. $(br2)When $(#9714CB)$(bold)Teleport$() hits an entity, it will randomly teleport them in a certain radius in order to leave you alone. $(br2)However, the higher $(bold)Level$() the spell is, the further the range the radius will be. $(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
     }
   ]
 }

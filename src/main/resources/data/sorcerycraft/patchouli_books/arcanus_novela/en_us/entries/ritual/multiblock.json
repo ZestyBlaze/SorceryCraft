@@ -7,12 +7,12 @@
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:crystalised_redstone_block",
       "title": "Ritual Circle",
-      "text": "In order to craft your own $(#E269FC)$(bold)Spells$(), you will need to build a $(#DE4040)$(bold)Ritual Circle$() in your world.$(br)Build the structure from the opposite page in the world, then you can follow the instructions from the $(l:ritual/crafting_spells)$(bold)$(italic)'Crafting Spells'$() entry on how to craft the spell you want!"
+      "text": "In order to craft your own $(spells), you will need to build a $(ritual_circle) in your world.$(br)Build the structure from the opposite page in the world, then you can follow the instructions from the $(l:ritual/crafting_spells)$(bold)$(italic)'Crafting Spells'$() entry on how to craft the spell you want!"
     },
     {
       "type": "patchouli:multiblock",
       "name": "Ritual Circle",
-      "text": "This is how to build a $(#DE4040)$(bold)Ritual Circle$(). Just light up the candles to get it ready to use!",
+      "text": "This is how to build a $(ritual_circle). Just light up the candles to get it ready to use!",
       "multiblock": {
         "pattern": [
           [ "__CVC__", "_X___X_", "C_____C", "V__Z__V", "C_____C", "_X___X_", "__CVC__" ],

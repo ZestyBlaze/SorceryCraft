@@ -7,11 +7,11 @@
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:spell",
       "title": "Flame",
-      "text": "Cost: Lv1 = Spell + Flint and Steel / Lv2 = Spell + Fire Charge $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 8 / Lv2 = 12$(br2)Your go-to for combat and cooking food. The flame spell has useful utility within and out of combat"
+      "text": "$(bold)COST: Lv1 = $(spell) + Flint and Steel$(br)$(bold)Lv2 = $(spell) + $(#8b2614)Fire Charge$() $(br2)$(bold)MAX LEVEL:$() $(#green)2$()$(br2)$(bold)XP COST:$() 【 Lv1 = $(#green)8$() 】•【 Lv2 = $(#green)12$()$(br2)$(italic)''Your go-to for combat and cooking food. The flame spell has useful utility within and out of combat''$()"
     },
     {
       "type": "patchouli:text",
-      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will be lit on fire (The higher the level of the spell, the longer they will be on fire).$(br)If the spell hits a block, it will light it on fire, or if it has the ability to be 'lit' (E.g. Campfires), it will light them on fire"
+      "text": "When you cast $(#FF5B0F)$(bold)Flame$(), a fire projectile is cast from your scroll. $(br2)When $(#FF5B0F)$(bold)Flame$() hits an entity, it will be lit on fire. The higher the level of the spell, the longer they will be on fire.$(br2)If the spell hits a block, it will light it on fire, or if it has the ability to be 'lit' (E.g. Campfires), it will light them on fire. $(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
     }
   ]
 }

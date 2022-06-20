@@ -7,11 +7,11 @@
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:spell",
       "title": "Levitate",
-      "text": "Cost: Lv1 = Spell + Shulker Shell / Lv2 = Spell + Elytra $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 12 / Lv2 = 24$(br2)One of the harder spells to craft but extremely useful for clearing away annoying and pesky players and mobs!"
+      "text": "$(bold)COST: Lv1 = $(spell) + $(#af4e9f)Shulker Shell$() $(br)$(bold)Lv2 = $(spell) + $(#075eba)Elytra$() $(br2)$(bold)MAX LEVEL:$() $(#green)2$() $(br2)$(bold)XP COST:$() 【 Lv1 = $(#green)12$() 】•【 Lv2 = $(#green)24$() 】 $(br2)$(italic)''One of the harder spells to craft but extremely useful for clearing away annoying and pesky ennemies!''$()"
     },
     {
       "type": "patchouli:text",
-      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will grant them the Potion Effect 'Levitation' (The higher level the spell is, the longer the status effect will be granted for)."
+      "text": "When casting $(#53a2a3)$(bold)Levitate$(), a light projectile is cast from your scroll. $(br2)When $(#53a2a3)$(bold)Levitate$() hits an entity, it will grant them the Potion Effect $(bold)Levitation$(). $(br2)The higher level the spell is, the longer the status effect will be granted for. $(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
     }
   ]
 }
