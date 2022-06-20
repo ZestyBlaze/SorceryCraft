@@ -7,11 +7,11 @@
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:spell",
       "title": "Damage",
-      "text": "Cost: Lv1 = Spell + Magma Block / Lv2 = Spell + Wither Rose $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 4 / Lv2 = 8$(br2)The most basic combat spell at your disposal, fairly easy to craft but powerful"
+      "text": "$(bold)COST: Lv1 = $(spell) + $(#FF4823)Magma Block$() $(br)$(bold)Lv2 = $(spell) + Wither Rose $(br2)$(bold)MAX LEVEL:$() $(#green)2$()$(br2)$(bold)XP COST:$() 【 Lv1 = $(#green)4$() 】•【 Lv2 = $(#green)8$() 】 $(br2)$(italic)''The most basic combat spell at your disposal, fairly easy to craft but powerful''$()"
     },
     {
       "type": "patchouli:text",
-      "text": "When you cast the spell, a spell projectile will be cast and any entity struck with the projectile will be inflicted with Instant Harm.$(br2)The higher level that the spell is, the more damage the spell will cause to the entity it hits (Does not work on Undead mobs)"
+      "text": "When you cast $(#ff2054)$(bold)Damage$(), a spiky projectile will be cast and any entity struck with it will be inflicted with $(bold)Instant Harm$().$(br2)The higher level that the spell is, the more damage the spell will cause to the entity it hits (Does not work on Undead mobs).$(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
     }
   ]
 }
