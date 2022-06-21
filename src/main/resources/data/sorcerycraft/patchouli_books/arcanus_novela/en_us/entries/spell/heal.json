@@ -7,11 +7,11 @@
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:spell",
       "title": "Heal",
-      "text": "Cost: Lv1 = Spell + White Bed / Lv2 = Spell + Ghast Tear $(br2)Max Level: 2$(br2)XP Cost: Lv1 = 4 / Lv2 = 8$(br2)The ultimate spell for keeping your allies alive during combat or healing your pets!"
+      "text": "$(bold)COST: $(spell) + White Bed $(br)$(bold)Lv2 = $(spell) + $(#419daf)Ghast Tear$() $(br2)$(bold)MAX LEVEL:$() $(#green)2$() $(br2)$(bold)XP COST:$() 【 Lv1 = $(#green)4$() 】•【 Lv2 = $(#green)8$() 】$(br2)$(italic)''The ultimate spell for keeping your allies alive during combat or healing your pets!''$()"
     },
     {
       "type": "patchouli:text",
-      "text": "When you cast the spell, a small projectile is cast from you. $(br)When the spell hits an entity, it will apply Instant Health to the target that it hit. $(br)Depending on the level of the spell, will depend on how much health the target will gain. The higher the level of the spell, the more health the target will gain"
+      "text": "When casting $(#31AF2B)$(bold)Heal$(), a fairy projectile is cast from your scroll. $(br2)When $(#31AF2B)$(bold)Heal$() hits an entity, it will apply $(bold)Instant Health$() to them. $(br2)Depending on the level of the spell, the positive impact on the target's health will increase. $(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
     }
   ]
 }
