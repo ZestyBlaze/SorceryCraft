@@ -1,10 +1,10 @@
 # SorceryCraft - Dispelled
-Cast Spells in Minecraft!
+Create, Cast, and Wield the magic of the world at your fingertips!
 
 This mod currently supports Minecraft 1.18.
 
 ## What are Spells?
-Spells are found throughout the world in chests. When you pick up a Spell you will "discover" it, once you "discover" a spell you can apply it to a blank or existing spell in the Casting Table. You can cast spells by right-clicking. There is also a 30% chance (by default) that the spell will rebound and hit you instead, unless the "Steadfast" spell is applied.
+Spells are magic scrolls that can be found around the world in chests, or you can create a magic circle out of precious gems and minerals and harness their power to combine a spell with its catalyst in order to create a spell yourself. You can cast spells by right-clicking. There is also a 20% chance (by default) that the spell will rebound and hit you instead, unless you have the "Steadfast" status effect.
 
 ## Crafting
 #### Blank Spell
