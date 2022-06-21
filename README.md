@@ -78,7 +78,7 @@ Spells are found throughout the world in chests. When you pick up a Spell you wi
 | Flame | 2 | Sets target on fire. |
 | Damage | 2 | Damages target. |
 | Heal | 2 | Heals target. |
-| Dissolve | 1 | Removes target's status effects. |
+| Cleanse | 1 | Removes target's status effects. |
 | Levitate | 2 | Gives target the Levitation effect. |
 | Steadfast | 1 | Prevents the spell from failing. This spell does nothing on its own. |
 | Teleport | 3 | Teleports the target to a random location. |
