@@ -1,0 +1,21 @@
+{
+  "name": "Crystals",
+  "icon": "sorcerycraft:crystal",
+  "category": "sorcerycraft:resources",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:crystal",
+      "title": "Crystal",
+      "text": "$(crystals) are the key resource in $(sorcerycraft). $(br)They can be obtained by mining $(crystal_ore) in the caves, for the bravest adventurers. $(br2)In $(sorcerycraft), $(crystals) are part various recipes such as $(hallowed_iron) and $(crystalised_redstone_block)."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["sorcerycraft:textures/book/book_crystal.png"],
+      "border": true,
+      "title": "Crystal",
+      "text": "One of many $(crystals) dropped on the grass."
+    }
+  ]
+}

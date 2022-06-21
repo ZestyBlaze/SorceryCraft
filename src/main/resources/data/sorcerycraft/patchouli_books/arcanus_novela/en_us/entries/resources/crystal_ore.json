@@ -1,0 +1,21 @@
+{
+  "name": "Crystal Ores",
+  "icon": "sorcerycraft:crystal_ore",
+  "category": "sorcerycraft:resources",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:crystal_ore",
+      "title": "Crystal Ore",
+      "text": "$(crystal_ore) can be mined to obtain $(br)$(crystals), which are vital in $(br)$(sorcerycraft). $(br2)They can be seen in caves between Height $(bold)23$() and $(bold)72$() in size of $(bold)5 ores$() per veins. $(br2)In $(sorcerycraft), $(crystal_ore) can usually be found when venturing in the caves."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["sorcerycraft:textures/book/book_crystal_ore.png"],
+      "border": true,
+      "title": "Crystal ores vein",
+      "text": "$(crystal_ore) in its natural form, in a cave."
+    }
+  ]
+}
