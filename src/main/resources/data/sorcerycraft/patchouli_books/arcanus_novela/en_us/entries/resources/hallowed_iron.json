@@ -1,0 +1,19 @@
+{
+  "name": "Hallowed Iron",
+  "icon": "sorcerycraft:hallowed_iron",
+  "category": "sorcerycraft:resources",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:hallowed_iron",
+      "title": "Hallowed Iron",
+      "text": "$(hallowed_iron) is a block introduced by $(sorcerycraft) and is used in the conception of a $(ritual_circle). $(br2)A block of $(hallowed_iron) can be crafted with $(bold)8x Iron Ingots$() and $(bold)1x$() $(crystals). $(br)See the recipe on the opposite page."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Hallowed Iron",
+      "recipe": "sorcerycraft:hallowed_iron"
+    }
+  ]
+}

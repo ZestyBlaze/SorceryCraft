@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Once you have the ingredients, throw them in the inner gold ring of the $(ritual_circle) and right click the $(hallowed_iron) in the centre with an empty hand. $(br)Items you just threw should disappear in a cloud of smoke and the crafted $(spell) should appear above in place of it! $(br)After the ritual, each $(crystallised_redstone_block) crystals will be drained and candles will be snuffed out.$(br)Reset them and light up the candles to start a new ritual."
+      "text": "Once you have the ingredients, throw them in the inner gold ring of the $(ritual_circle) and right click the $(hallowed_iron) in the centre with an empty hand. $(br)Items you just threw should disappear in a cloud of smoke and the crafted $(spell) should appear above in place of it! $(br)After the ritual, each $(crystalised_redstone_block) crystals will be drained and candles will be snuffed out.$(br)$(l:resources/crystalised_redstone)$(bold)$(italic)Recharge them$() and light up the candles to start a new ritual."
     }
   ]
 }

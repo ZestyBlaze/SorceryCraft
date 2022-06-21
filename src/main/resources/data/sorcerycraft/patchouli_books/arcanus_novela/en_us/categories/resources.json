@@ -1,0 +1,6 @@
+{
+  "name": "Magic Resources",
+  "description": "In $(sorcerycraft), you practice magic with rituals and $(spells). $(br2)To be able to practice, you will need to find and craft various items and blocks used by $(sorcerycraft). $(br2)The $(book) will help you through this process by identifying these necessary resources.",
+  "icon": "sorcerycraft:crystal",
+  "sortnum": "9"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Crystalised Redstone Block",
+  "icon": "sorcerycraft:crystalised_redstone_block",
+  "category": "sorcerycraft:resources",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:crystalised_redstone_block",
+      "title": "Cryst. Redstone Block",
+      "text": "$(crystalised_redstone_block) are introduced by $(sorcerycraft) and are used in the conception of a $(ritual_circle). $(br2)A block of $(crystalised_redstone_block) can be crafted with $(bold)8x Redstone Dusts$() and $(bold)1x$() $(crystals). $(br)See the recipe on the opposite page."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Cryst. Redstone Block",
+      "recipe": "sorcerycraft:crystalised_redstone_block"
+    }
+  ]
+}

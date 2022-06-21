@@ -1,0 +1,19 @@
+{
+  "name": "Crystalised Redstone",
+  "icon": "sorcerycraft:crystalised_redstone",
+  "category": "sorcerycraft:resources",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sorcerycraft:crystalised_redstone",
+      "title": "Cryst. Redstone",
+      "text": "$(crystalised_redstone_dust) are introduced by $(sorcerycraft) and are used to recharge drained $(crystalised_redstone_block) by right clicking them. $(br2)A $(crystalised_redstone_dust) can be crafted with $(bold)1x Redstone Dusts$() and $(bold)1x$() $(crystals). $(br)See the recipe on the opposite page."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Cryst. Redstone",
+      "recipe": "sorcerycraft:crystalised_redstone"
+    }
+  ]
+}
