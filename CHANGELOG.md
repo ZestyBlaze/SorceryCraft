@@ -1,6 +1,6 @@
 # Changelog
 
-**1.0.1-alpha**
+**1.1.0-beta**
 * Tweaked file structure around to make more sense on the development front
 * Changed "Dissolve" to be called "Cleanse" for easier understanding
 * An amazing book reformatting thanks to NebSpacefarer
@@ -9,6 +9,9 @@
 * Fixed a crash when opening the Arcanus Novela when Patchouli is not installed
 * Tweaked the tooltip for the book when Patchouli is not installed to a better lore
 * Removed an unused lang key
+* Changed Spell Failure Chance from 30% to 20%
+* Updated Dependencies
+* Removed NBTCrafting from being included in the jar
 
 **1.0.0-alpha**
 * 1.18.2 port
