@@ -37,6 +37,8 @@ public class GuideBookItem extends Item {
     @Nonnull
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player user, InteractionHand hand) {
+        if(!FabricLoader.getInstance().isModLoaded("patchouli")) return InteractionResultHolder.fail(user.getItemInHand(hand));
+
         if (user instanceof ServerPlayer player) {
             Book book = BookRegistry.INSTANCE.books.get(Registry.ITEM.getKey(this));
             PatchouliAPI.get().openBookGUI(player, book.id);
