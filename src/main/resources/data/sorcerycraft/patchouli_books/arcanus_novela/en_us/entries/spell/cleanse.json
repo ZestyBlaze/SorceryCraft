@@ -1,17 +1,17 @@
 {
-  "name": "Dissolve",
+  "name": "Cleanse",
   "icon": "sorcerycraft:spell",
   "category": "sorcerycraft:spell",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:spell",
-      "title": "Dissolve",
+      "title": "Cleanse",
       "text": "$(bold)COST: $(spell) + $(#c7a734)Clock$()$(br2)$(bold)MAX LEVEL:$() $(#green)1$() $(br2)$(bold)XP COST:$() $(#green)8$()$(br2)$(italic)''An easy spell to make and use. When striking an entity with the projectile, it will clear them of all status effects.''$()"
     },
     {
       "type": "patchouli:text",
-      "text": "When casting $(#148c50)$(bold)Dissolve$(), a projectile will be thrown from your scroll, upon striking another entity, it will clear all effects from them, good or bad. $(br2)$(#148c50)$(bold)Dissolve$() could easily have combat practicality since you could remove buffs from your ennemies or debuffs from your allies. $(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
+      "text": "When casting $(#148c50)$(bold)Cleanse$(), a projectile will be thrown from your scroll, upon striking another entity, it will clear all effects from them, good or bad. $(br2)$(#148c50)$(bold)Cleanse$() could easily have combat practicality since you could remove buffs from your ennemies or debuffs from your allies. $(br2)$(bold)Tip: $(italic)The scroll is a one-time use.$()"
     }
   ]
 }

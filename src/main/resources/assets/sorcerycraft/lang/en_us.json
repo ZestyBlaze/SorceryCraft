@@ -18,13 +18,6 @@
     "effect.sorcerycraft.inward": "Inward",
     "effect.sorcerycraft.steadfast": "Steadfast",
 
-    "command.sorcerycraft.spell.forgotten_spell": "%s has forgotten the spell %s",
-    "command.sorcerycraft.spell.listing_spells": "%s has discovered the following spells: %s",
-    "command.sorcerycraft.spell.unknown_spell": "Unknown spell: %s",
-    "command.sorcerycraft.spell.not_holding_spell": "%s is not holding a spell",
-    "command.sorcerycraft.spell.applied_spell": "Applied Spell %s",
-    "command.sorcerycraft.spell.removed_spell": "Removed Spell %s",
-
     "stat.sorcerycraft.interact_with_casting_table": "Interactions with Casting Table",
     "stat.sorcerycraft.cast_spell": "Spells Cast",
 
@@ -45,7 +38,7 @@
 
     "spell.sorcerycraft.damage_spell": "Damage",
     "spell.sorcerycraft.heal_spell": "Heal",
-    "spell.sorcerycraft.dissolve_spell": "Dissolve",
+    "spell.sorcerycraft.cleanse_spell": "Dissolve",
     "spell.sorcerycraft.steadfast_spell": "Steadfast",
     "spell.sorcerycraft.flame_spell": "Flame",
     "spell.sorcerycraft.levitate_spell": "Levitate",

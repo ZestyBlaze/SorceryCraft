@@ -6,8 +6,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.zestyblaze.sorcerycraft.api.Spell;
 
-public class DissolveSpell extends Spell {
-    public DissolveSpell(ResourceLocation id, int level) {
+public class CleanseSpell extends Spell {
+    public CleanseSpell(ResourceLocation id, int level) {
         super(id, level);
     }
 
