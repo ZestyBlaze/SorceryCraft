@@ -86,32 +86,6 @@ Spells are found throughout the world in chests. When you pick up a Spell you wi
 | Cooling | 1 | Extinguish the target if they are on fire. |
 | Lightning | 1 | Strikes the target with lightning. |
 
-
-
-## ```/spell``` Command - NOT YET IMPLEMENTED AGAIN FOR 1.18
-This command requires OP permissions.
-
-#### ```/spell forget <player>```
-This command clears all known spells from the given player.
-
-#### ```/spell forget <player> <spell-id>```
-This command clears the specified spell from the given player.
-
-#### ```/spell list <player>```
-This lists all the spells the given player knows.
-
-#### ```/spell discover <player>```
-This adds all spells to the specified player's discovered spells list.
-
-#### ```/spell discover <player> <spell-id> <level>```
-This adds the specified spell to the specified player's discovered spells list.
-
-#### ```/spell apply <player> <spell-id> <level>```
-This adds the specified spell to the item in the specified player's main hand.
-
-#### ```/spell remove <player> <spell-id>```
-This removes the specified spell from the item in the specified player's main hand.
-
 ## Licenses
 [Code License](CODE_LICENSE)
 
