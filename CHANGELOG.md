@@ -2,6 +2,8 @@
 
 **1.0.1-alpha**
 - Tweaked file structure around to make more sense on the development front
+- Changed "Dissolve" to be called "Cleanse" for easier understanding
+- An amazing book reformatting thanks to NebSpacefarer
 
 **1.0.0-alpha**
 * 1.18.2 port

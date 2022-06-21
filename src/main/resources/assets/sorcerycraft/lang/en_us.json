@@ -18,10 +18,9 @@
     "effect.sorcerycraft.inward": "Inward",
     "effect.sorcerycraft.steadfast": "Steadfast",
 
-    "stat.sorcerycraft.interact_with_casting_table": "Interactions with Casting Table",
     "stat.sorcerycraft.cast_spell": "Spells Cast",
 
-    "text.sorcerycraft.guide_book.fail": "Install Patchouli for this",
+    "text.sorcerycraft.guide_book.fail": "You may not read these scriptures without Patchouli installed",
 
     "text.autoconfig.sorcerycraft.title": "SorceryCraft Config",
     "text.autoconfig.sorcerycraft.option.failureChance": "Spell Failure Chance",
