@@ -1,5 +1,11 @@
 # Changelog
 
+**1.1.1-beta**
+* Bumped version number up
+* Updated icon
+* Added the homepage
+* The book now mentions spell failure chances
+
 **1.1.0-beta**
 * Tweaked file structure around to make more sense on the development front
 * Changed "Dissolve" to be called "Cleanse" for easier understanding
