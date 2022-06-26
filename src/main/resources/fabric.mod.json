@@ -17,7 +17,7 @@
   },
 
   "license": "MIT License",
-  "icon": "assets/sorcerycraft/textures/item/spell.png",
+  "icon": "icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -42,5 +42,10 @@
     "java": ">=17",
     "cloth-config2": ">=6.1.48",
     "nbtcrafting": "*"
+  },
+
+  "suggests": {
+    "modmenu": "*",
+    "patchouli": "*"
   }
 }
