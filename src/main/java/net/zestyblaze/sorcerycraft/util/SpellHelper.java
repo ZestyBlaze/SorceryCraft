@@ -98,7 +98,7 @@ public class SpellHelper {
     }
 
     public static Component getTranslatedSpellChat(ResourceLocation id, int level) {
-        return new TextComponent("[").append(SpellHelper.getTranslatedSpell(id, level).getString()).append("]").withStyle(ChatFormatting.GREEN);
+        return Component.literal("[").append(SpellHelper.getTranslatedSpell(id, level).getString()).append("]").withStyle(ChatFormatting.GREEN);
     }
 
     public static void learnSpells(@NotNull Player player, @NotNull Map<ResourceLocation, Integer> itemSpells) {
@@ -122,7 +122,7 @@ public class SpellHelper {
                     playerSpells.put(spell.getID(), spell.getLevel());
                     assert world.getServer() != null;
                     Component text = getTranslatedSpellChat(spell.getID(), spell.getLevel());
-                    world.getServer().getPlayerList().broadcastAll(new ClientboundChatPacket(new TranslatableComponent("chat." + SorceryCraft.MODID + ".discovered_spell", player.getDisplayName(), text), ChatType.CHAT, Util.NIL_UUID));
+                    world.getServer().getPlayerList().broadcastAll(new ClientboundChatPacket(Component.translatable("chat." + SorceryCraft.MODID + ".discovered_spell", player.getDisplayName(), text), ChatType.CHAT, Util.NIL_UUID));
                 }
             }
         }

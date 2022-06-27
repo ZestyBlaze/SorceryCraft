@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
@@ -113,7 +113,7 @@ public class HallowedIronBlockEntity extends BlockEntity implements Container {
         if(recipe != null && recipe.cost.size() == items.size()) {
             if(!((Player)user).isCreative() && ((Player)user).experienceLevel < recipe.xpCost) {
                 Player player = (Player) user;
-                player.displayClientMessage(new TranslatableComponent("ritual.invalidXp"), true);
+                player.displayClientMessage(Component.translatable("ritual.invalidXp"), true);
                 return;
             }
             if(!((Player)user).isCreative()) {
@@ -144,7 +144,7 @@ public class HallowedIronBlockEntity extends BlockEntity implements Container {
         }
         level.playSound(null, pos, SoundEvents.PISTON_CONTRACT, SoundSource.BLOCKS, 1, 1);
         if(user instanceof Player player) {
-            player.displayClientMessage(new TranslatableComponent("ritual.none"), true);
+            player.displayClientMessage(Component.translatable("ritual.none"), true);
         }
     }
 }

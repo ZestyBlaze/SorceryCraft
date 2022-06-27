@@ -4,7 +4,6 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -30,7 +29,7 @@ public class GuideBookItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag context) {
         if(!FabricLoader.getInstance().isModLoaded("patchouli")) {
-            tooltip.add(new TranslatableComponent("text.sorcerycraft.guide_book.fail").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
+            tooltip.add(Component.translatable("text.sorcerycraft.guide_book.fail").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
         }
     }
 
