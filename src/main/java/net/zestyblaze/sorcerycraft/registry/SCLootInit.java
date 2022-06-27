@@ -1,10 +1,10 @@
 package net.zestyblaze.sorcerycraft.registry;
 
-import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
-import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.providers.number.BinomialDistributionGenerator;
@@ -37,13 +37,13 @@ public class SCLootInit {
     }
 
     public static void registerLootTables() {
-        LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
-            if(isSelectedLootTable(id)) {
-                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .rolls(BinomialDistributionGenerator.binomial(2, 0.5f))
-                        .withEntry(LootItem.lootTableItem(SCItemInit.SPELL_ITEM).build())
-                        .withFunction(new RandomSpellLootTableFunction.Builder().build());
-                supplier.withPool(poolBuilder.build());
+        LootTableEvents.MODIFY.register(((resourceManager, manager, id, supplier, setter) -> {
+            if(setter.isBuiltin() && isSelectedLootTable(id)) {
+                LootPool.Builder poolBuilder = LootPool.lootPool()
+                        .setRolls(BinomialDistributionGenerator.binomial(2, 0.5f))
+                        .with(LootItem.lootTableItem(SCItemInit.SPELL_ITEM).build())
+                        .apply(new RandomSpellLootTableFunction.Builder().build());
+                supplier.withPool(poolBuilder);
             }
         }));
     }

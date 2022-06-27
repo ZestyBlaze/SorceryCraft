@@ -30,9 +30,9 @@ public class ClientPacketListenerMixin {
             double x = packet.getX();
             double y = packet.getY();
             double z = packet.getZ();
-            entity.setPacketCoordinates(x, y, z);
-            entity.setXRot((float)(packet.getxRot() * 360) / 250F);
-            entity.setYRot((float)(packet.getyRot() * 360) / 250F);
+            entity.syncPacketPositionCodec(x, y, z);
+            entity.setXRot((packet.getXRot() * 360) / 250F);
+            entity.setYRot((packet.getYRot() * 360) / 250F);
             entity.setId(packet.getId());
             entity.setUUID(packet.getUUID());
             level.putNonPlayerEntity(packet.getId(), entity);

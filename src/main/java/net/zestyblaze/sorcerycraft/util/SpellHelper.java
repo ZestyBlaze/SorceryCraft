@@ -1,12 +1,10 @@
 package net.zestyblaze.sorcerycraft.util;
 
 import net.minecraft.ChatFormatting;
-import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.*;
-import net.minecraft.network.protocol.game.ClientboundChatPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
@@ -122,7 +120,8 @@ public class SpellHelper {
                     playerSpells.put(spell.getID(), spell.getLevel());
                     assert world.getServer() != null;
                     Component text = getTranslatedSpellChat(spell.getID(), spell.getLevel());
-                    world.getServer().getPlayerList().broadcastAll(new ClientboundChatPacket(Component.translatable("chat." + SorceryCraft.MODID + ".discovered_spell", player.getDisplayName(), text), ChatType.CHAT, Util.NIL_UUID));
+                    world.getServer().getPlayerList().broadcastSystemMessage(Component.translatable("chat." + SorceryCraft.MODID + ".discovered_spell", player.getDisplayName(), text), ChatType.SYSTEM);
+
                 }
             }
         }

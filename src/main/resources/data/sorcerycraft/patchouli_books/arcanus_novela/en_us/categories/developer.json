@@ -2,5 +2,5 @@
   "name": "Developer Zone",
   "description": "In this section, developers will find all the information they could need!$(br) - Currently empty but will be filled in next few updates -",
   "icon": "minecraft:command_block",
-  "sortnum": "10"
+  "sortnum": 10
 }

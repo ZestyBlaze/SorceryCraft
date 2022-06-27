@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Deprecated
+@Deprecated(forRemoval = true)
 public class SpellItem extends Item {
     public SpellItem() {
         super(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16).group(SorceryCraft.ITEM_GROUP));
@@ -75,7 +75,7 @@ public class SpellItem extends Item {
 
     @Override
     public void fillItemCategory(@NotNull CreativeModeTab group, @NotNull NonNullList<ItemStack> stacks) {
-        if(allowdedIn(group)) {
+        if(allowedIn(group)) {
             stacks.add(new ItemStack(this));
             Spell[] spells = SpellRegistry.getSpells();
             for (Spell value : spells) {
