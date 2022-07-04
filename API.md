@@ -4,13 +4,13 @@
 1. Add Dependency to Gradle
     ```gradle
     maven {
-    name = "SorceryCraft"
-    url "https://maven.concern.i.ng/releases"
-
-   dependencies {
-   modApi "net.zestyblaze:Sorcery:LATEST"
-   {LATEST = Latest mod version available on Curseforge for target version}
-   }
+        name = "SorceryCraft"
+        url "https://maven.concern.i.ng/releases"
+    }
+    dependencies {
+        modApi "net.zestyblaze:Sorcery:LATEST"
+        {LATEST = Latest mod version available on Curseforge for target version}
+    }
     ```
 2. Add Dependency to ```fabric.mod.json```
     ```json
