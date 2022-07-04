@@ -20,7 +20,7 @@
         }
     }
     ```
-3. Create a class extending ```com.thebrokenrail.sorcerycraft.spell.api.Spell```
+3. Create a class extending ```net.zestyblaze.sorcerycraft.api.Spell```
     ```java
     public class ExampleSpell extends Spell {
        public ExampleSpell(Identifier id, int level) {
@@ -86,7 +86,7 @@
             "data": {
               "Spells": [
                 {
-                   "id": "[modid:id_of_spell[",
+                   "id": "[modid:id_of_spell]",
                    "level": [0]
                 }        
               ]      
