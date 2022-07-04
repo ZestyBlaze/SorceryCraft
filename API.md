@@ -9,14 +9,15 @@
 
    dependencies {
    modApi "net.zestyblaze:Sorcery:LATEST"
-   LATEST = Latest mod version available on Curseforge for target version
+   {LATEST = Latest mod version available on Curseforge for target version}
    }
     ```
 2. Add Dependency to ```fabric.mod.json```
     ```json
     {
         "depends": {
-            "sorcerycraft": "1.0.x"
+            "sorcerycraft": "LATEST"
+            {LATEST = Latest mod version available on Curseforge for target version}
         }
     }
     ```
