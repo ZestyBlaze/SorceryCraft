@@ -1,13 +1,13 @@
 {
   "name": "Steadfast",
-  "icon": "sorcerycraft:spell",
+  "icon": "sorcerycraft:blank_scroll",
   "category": "sorcerycraft:spell",
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "sorcerycraft:spell",
+      "item": "sorcerycraft:self_use_spell",
       "title": "Steadfast",
-      "text": "$(bold)COST: $(spell) + $(#935045)Netherite Ingot$()$(br2)$(bold)MAX LEVEL:$() $(#green)1$() $(br2)$(bold)XP COST:$() $(#green)18$() $(br2)$(italic)''An easy spell to make and use with a vital feature : when striking an entity, it will give you the 'Steadfast' potion effect. Never miss a spell cast again!''$()"
+      "text": "$(bold)TYPE:$() $(l:mechanics/spells_types)Self Use$() $(br)$(bold)COST: $(spell) + $(#935045)Netherite Ingot$()$(br)$(bold)MAX LEVEL:$() $(#green)1$() $(br)$(bold)XP COST:$() $(#green)18$() $(br2)$(italic)''An easy spell to make and use with a vital feature : when striking an entity, it will give you the 'Steadfast' potion effect. Never miss a spell cast again!''$()"
     },
     {
       "type": "patchouli:text",

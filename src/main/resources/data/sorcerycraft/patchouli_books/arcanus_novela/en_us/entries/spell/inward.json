@@ -1,13 +1,13 @@
 {
   "name": "Inward",
-  "icon": "sorcerycraft:spell",
+  "icon": "sorcerycraft:blank_scroll",
   "category": "sorcerycraft:spell",
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "sorcerycraft:spell",
+      "item": "sorcerycraft:projectile_spell",
       "title": "Inward",
-      "text": "$(bold)COST: $(spell) + $(#07735d)Ender Eye$()$(br2)$(bold)MAX LEVEL:$() $(#green)1$() $(br2)$(bold)XP COST:$() $(#green)16$() $(br2)$(italic)''A easy spell to make and use, when striking an entity, it will give them the 'Inward' status effect.''$()"
+      "text": "$(bold)TYPE:$() $(l:mechanics/spells_types)Projectile$() $(br)$(bold)COST: $(spell) + $(#07735d)Ender Eye$() $(br)$(bold)MAX LEVEL:$() $(#green)1$() $(br)$(bold)XP COST:$() $(#green)16$() $(br2)$(italic)''A easy spell to make and use, when striking an entity, it will give them the 'Inward' status effect.''$()"
     },
     {
       "type": "patchouli:text",
