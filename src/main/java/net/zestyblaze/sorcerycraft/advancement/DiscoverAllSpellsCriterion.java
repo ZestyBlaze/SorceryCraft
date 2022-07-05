@@ -8,7 +8,7 @@ import net.minecraft.advancements.critereon.SimpleCriterionTrigger;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.api.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
 import org.jetbrains.annotations.NotNull;

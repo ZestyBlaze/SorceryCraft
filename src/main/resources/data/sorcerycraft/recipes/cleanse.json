@@ -5,15 +5,15 @@
       "item": "clock"
     },
     {
-      "item": "sorcerycraft:spell"
+      "item": "sorcerycraft:blank_scroll"
     }
   ],
   "result": {
-    "item": "sorcerycraft:spell",
+    "item": "sorcerycraft:multi_type_spell",
     "data": {
       "Spells": [
         {
-          "id": "sorcerycraft:dissolve_spell",
+          "id": "sorcerycraft:cleanse_spell",
           "level": 0
         }
       ]

@@ -1,5 +1,19 @@
 # Changelog
 
+**1.2.0-beta**
+* Fixed "Cleanse" spell being uncraftable
+* Split up `SpellItem`into 3 different spell items for easier spell use
+* Spells are now split between "Self Use", "Projectile" or "Both"
+* Moved `didSpellSuceeed` method to `SpellHelper` for addons to use
+* Moved `SpellHelper` to the API package
+* Split up packages in the API for easier finding and formatting
+* Moved Spell names into the name of the item to make it faster for use in hotbar in combat when multiple spells are in the hotbar
+* Added the spell's type into the tooltip to let it be easier to know what spell it is
+* Spell's have different tassel's depending on what type of spell it is
+
+**1.1.2-beta**
+* Hotfix for book not working in 1.19 (+ made it the same for 1.18 to make it consistent across versions)
+
 **1.1.1-beta**
 * Bumped version number up
 * Updated icon

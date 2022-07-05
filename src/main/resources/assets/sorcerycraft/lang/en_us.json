@@ -4,7 +4,15 @@
     "item.sorcerycraft.arcanus_novela": "Arcanus Novela",
     "item.sorcerycraft.crystal": "Crystal",
     "item.sorcerycraft.crystalised_redstone": "Crystalised Redstone",
-    "item.sorcerycraft.spell": "Spell",
+    "item.sorcerycraft.blank_scroll": "Blank Scroll",
+    "item.sorcerycraft.self_use_spell": "Spell",
+    "item.sorcerycraft.projectile_spell": "Spell",
+    "item.sorcerycraft.multi_type_spell": "Spell",
+
+    "spell.type": "Spell Type: ",
+    "spellType.self": "Self",
+    "spellType.projectile": "Projectile",
+    "spellType.both": "Multi Type",
 
     "block.sorcerycraft.crystal_ore": "Crystal Ore",
     "block.sorcerycraft.hallowed_iron": "Hallowed Iron",

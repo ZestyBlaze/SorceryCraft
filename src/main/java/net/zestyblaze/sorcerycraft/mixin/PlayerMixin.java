@@ -4,7 +4,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.zestyblaze.sorcerycraft.util.SpellHelper;
+import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;

@@ -9,8 +9,9 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.providers.number.BinomialDistributionGenerator;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.util.RandomSpellLootTableFunction;
+import net.zestyblaze.sorcerycraft.util.RandomProjectileSpellLootTableFunction;
 
+@SuppressWarnings("deprecation")
 public class SCLootInit {
     public static final ResourceLocation[] LOOT_TABLES = new ResourceLocation[]{
             BuiltInLootTables.SIMPLE_DUNGEON,
@@ -37,18 +38,19 @@ public class SCLootInit {
     }
 
     public static void registerLootTables() {
+        //Needs to be fixed to register all 3 spell types
         LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
             if(isSelectedLootTable(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(BinomialDistributionGenerator.binomial(2, 0.5f))
-                        .withEntry(LootItem.lootTableItem(SCItemInit.SPELL_ITEM).build())
-                        .withFunction(new RandomSpellLootTableFunction.Builder().build());
+                        .withEntry(LootItem.lootTableItem(SCItemInit.PROJECTILE_SPELL).build())
+                        .withFunction(new RandomProjectileSpellLootTableFunction.Builder().build());
                 supplier.withPool(poolBuilder.build());
             }
         }));
     }
 
     public static void registerLootFunctions() {
-        Registry.register(Registry.LOOT_FUNCTION_TYPE, new ResourceLocation(SorceryCraft.MODID, "random_spell"), new LootItemFunctionType(new RandomSpellLootTableFunction.Factory()));
+        Registry.register(Registry.LOOT_FUNCTION_TYPE, new ResourceLocation(SorceryCraft.MODID, "random_spell"), new LootItemFunctionType(new RandomProjectileSpellLootTableFunction.Factory()));
     }
 }

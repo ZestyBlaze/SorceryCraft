@@ -7,11 +7,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.BlockHitResult;
-import net.zestyblaze.sorcerycraft.api.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.SpellType;
 
 public class CoolingSpell extends Spell {
     public CoolingSpell(ResourceLocation id, int level) {
-        super(id, level);
+        super(id, level, SpellType.PROJECTILE);
     }
 
     @Override

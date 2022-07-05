@@ -1,4 +1,4 @@
-package net.zestyblaze.sorcerycraft.util;
+package net.zestyblaze.sorcerycraft.api.spell;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockSource;
@@ -8,7 +8,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
-public class SoundUtil {
+public class SpellSoundUtil {
     private static final SoundEvent SPELL_SOUND_EFFECT = SoundEvents.ENCHANTMENT_TABLE_USE;
 
     public static void playSpellSound(Level world, BlockPos pos) {

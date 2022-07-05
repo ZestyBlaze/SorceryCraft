@@ -26,12 +26,12 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.zestyblaze.sorcerycraft.network.SpawnSmokeParticlesPacket;
-import net.zestyblaze.sorcerycraft.api.RitualRecipe;
+import net.zestyblaze.sorcerycraft.api.recipe.RitualRecipe;
 import net.zestyblaze.sorcerycraft.registry.SCBlockEntityInit;
 import net.zestyblaze.sorcerycraft.registry.SCCriteriaInit;
 import net.zestyblaze.sorcerycraft.registry.SCRecipeInit;
 import net.zestyblaze.sorcerycraft.util.MultiblockUtil;
-import net.zestyblaze.sorcerycraft.util.SoundUtil;
+import net.zestyblaze.sorcerycraft.api.spell.SpellSoundUtil;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -129,7 +129,7 @@ public class HallowedIronBlockEntity extends BlockEntity implements Container {
             }
             if(!level.isClientSide()) {
                 clearContent();
-                SoundUtil.playSpellSound(level, pos);
+                SpellSoundUtil.playSpellSound(level, pos);
                 Containers.dropItemStack(level, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, recipe.getResultItem().copy());
 
                 //This is to make things a little easier for devs to not worry about the circle snuffing during testing

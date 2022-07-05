@@ -5,11 +5,11 @@
       "item": "magma_block"
     },
     {
-      "item": "sorcerycraft:spell"
+      "item": "sorcerycraft:blank_scroll"
     }
   ],
   "result": {
-    "item": "sorcerycraft:spell",
+    "item": "sorcerycraft:projectile_spell",
     "data": {
       "Spells": [
         {

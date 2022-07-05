@@ -1,7 +1,7 @@
 package net.zestyblaze.sorcerycraft.api.registry;
 
 import net.minecraft.resources.ResourceLocation;
-import net.zestyblaze.sorcerycraft.api.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;

@@ -2,7 +2,7 @@
   "parent": "sorcerycraft:adventure/discover_spell",
   "display": {
     "icon": {
-      "item": "sorcerycraft:spell",
+      "item": "sorcerycraft:projectile_spell",
       "nbt": "{Spells: [{id: \"sorcerycraft:damage_spell\", level: 0}]}"
     },
     "title": {
@@ -17,7 +17,13 @@
     "hidden": false
   },
   "criteria": {
-    "sorcerycraft:spell": {
+    "sorcerycraft:self_use_spell": {
+      "trigger": "sorcerycraft:discover_all_spells"
+    },
+    "sorcerycraft:projectile_spell": {
+      "trigger": "sorcerycraft:discover_all_spells"
+    },
+    "sorcerycraft:multi_type_spell": {
       "trigger": "sorcerycraft:discover_all_spells"
     }
   },

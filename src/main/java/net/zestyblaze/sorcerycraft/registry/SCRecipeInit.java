@@ -6,7 +6,7 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.api.RitualRecipe;
+import net.zestyblaze.sorcerycraft.api.recipe.RitualRecipe;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

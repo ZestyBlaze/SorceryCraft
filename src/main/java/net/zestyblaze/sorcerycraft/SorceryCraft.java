@@ -11,7 +11,7 @@ public class SorceryCraft implements ModInitializer {
 	public static final String MODID = "sorcerycraft";
 	public static final CreativeModeTab ITEM_GROUP = FabricItemGroupBuilder.build(
 			new ResourceLocation(MODID, "spells"),
-			() -> new ItemStack(SCItemInit.SPELL_ITEM)
+			() -> new ItemStack(SCItemInit.BLANK_SCROLL)
 	);
 
 	@Override
