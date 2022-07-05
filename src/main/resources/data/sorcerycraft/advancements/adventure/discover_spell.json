@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "sorcerycraft:spell_items"
+            "tag": "sorcerycraft:spells/spell_items"
           }
         ]
       }
