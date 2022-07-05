@@ -152,7 +152,7 @@ public class SpellHelper {
             }
         }
         if (changed) {
-            SpellSoundUtil.playSpellSound(player);
+            SpellSoundUtil.playSpellSoundDiscoverSound(player);
             spellPlayer.setDiscoveredSpells(playerSpells);
             SCCriteriaInit.DISCOVER_ALL_SPELLS_CRITERION.trigger((ServerPlayer)player);
         }

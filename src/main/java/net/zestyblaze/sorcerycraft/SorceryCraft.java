@@ -23,6 +23,7 @@ public class SorceryCraft implements ModInitializer {
 		SCBlockEntityInit.registerBlockEntities();
 		SCEntityInit.registerEntities();
 		SCMobEffectInit.registerMobEffects();
+		SCSoundInit.registerSounds();
 		SCWorldInit.registerOres();
 		SCRecipeInit.registerRecipes();
 		SCCriteriaInit.registerCriteria();
