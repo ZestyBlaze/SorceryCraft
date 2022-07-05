@@ -26,12 +26,12 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.zestyblaze.sorcerycraft.network.SpawnSmokeParticlesPacket;
-import net.zestyblaze.sorcerycraft.api.recipe.RitualRecipe;
+import net.zestyblaze.sorcerycraft.recipe.RitualRecipe;
 import net.zestyblaze.sorcerycraft.registry.SCBlockEntityInit;
 import net.zestyblaze.sorcerycraft.registry.SCCriteriaInit;
 import net.zestyblaze.sorcerycraft.registry.SCRecipeInit;
 import net.zestyblaze.sorcerycraft.util.MultiblockUtil;
-import net.zestyblaze.sorcerycraft.api.spell.SpellSoundUtil;
+import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

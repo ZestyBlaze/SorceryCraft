@@ -22,7 +22,7 @@ import net.zestyblaze.sorcerycraft.api.spell.SpellType;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import net.zestyblaze.sorcerycraft.registry.SCStatInit;
-import net.zestyblaze.sorcerycraft.api.spell.SpellSoundUtil;
+import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;

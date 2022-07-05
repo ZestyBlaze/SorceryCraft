@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.zestyblaze.sorcerycraft.entity.SpellEntity;
-import net.zestyblaze.sorcerycraft.api.spell.SpellSoundUtil;
+import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 
 public class SCBehaviourInit {
     public static void registerDispenserBehaviour() {

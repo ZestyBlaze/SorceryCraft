@@ -21,7 +21,6 @@ import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 import net.zestyblaze.sorcerycraft.config.SCModConfig;
 import net.zestyblaze.sorcerycraft.registry.SCCriteriaInit;
 import net.zestyblaze.sorcerycraft.registry.SCMobEffectInit;
-import net.zestyblaze.sorcerycraft.api.spell.SpellSoundUtil;
 import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
 import org.jetbrains.annotations.NotNull;
 

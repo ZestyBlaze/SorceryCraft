@@ -20,7 +20,7 @@ import net.zestyblaze.sorcerycraft.api.spell.SpellType;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 import net.zestyblaze.sorcerycraft.entity.SpellEntity;
 import net.zestyblaze.sorcerycraft.registry.SCStatInit;
-import net.zestyblaze.sorcerycraft.api.spell.SpellSoundUtil;
+import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import org.jetbrains.annotations.NotNull;
 

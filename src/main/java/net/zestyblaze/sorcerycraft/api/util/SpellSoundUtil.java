@@ -1,4 +1,4 @@
-package net.zestyblaze.sorcerycraft.api.spell;
+package net.zestyblaze.sorcerycraft.api.util;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockSource;
