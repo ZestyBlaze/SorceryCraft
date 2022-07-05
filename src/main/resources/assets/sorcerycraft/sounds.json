@@ -1,0 +1,16 @@
+{
+  "item.spell.discovered": {
+    "sounds": [
+      "minecraft:block/enchantment_table/enchant1",
+      "minecraft:block/enchantment_table/enchant2"
+    ],
+    "subtitle": "sorcerycraft.subtitles.item.spell.discovered"
+  },
+  "item.spell.cast": {
+    "sounds": [
+      "minecraft:block/enchantment_table/enchant1",
+      "minecraft:block/enchantment_table/enchant2"
+    ],
+    "subtitle": "sorcerycraft.subtitles.item.spell.cast"
+  }
+}
