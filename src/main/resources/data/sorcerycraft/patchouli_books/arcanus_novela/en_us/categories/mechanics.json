@@ -1,0 +1,6 @@
+{
+  "name": "Mechanics",
+  "description": "In $(sorcerycraft), you practice magic with rituals and $(spells). $(br2)A $(ritual_circle) is a multiblock structure allowing you to craft $(spells). They cannot be crafted otherwise. $(br)$(bold)Dive deeper$() in the world of sorcery with your $(book), and learn the basics of spells crafting and casting.",
+  "icon": "sorcerycraft:hallowed_iron",
+  "sortnum": 0
+}

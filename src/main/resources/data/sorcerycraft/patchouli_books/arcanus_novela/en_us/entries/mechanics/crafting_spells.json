@@ -1,0 +1,15 @@
+{
+  "name": "Spell Crafting",
+  "icon": "sorcerycraft:crystalised_redstone",
+  "category": "sorcerycraft:mechanics",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Now you have got a $(ritual_circle) built, you'll want to light up all the candles in the circle. Once you do that, we can begin the fun! $(br2)Find the $(spell) you would like to craft on the $(l:spell)$(bold)$(italic)'Spells' category$() of this book and it will tell you the ingredients that you need for the chosen $(spell) as the $(bold)'Cost'$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Once you have the ingredients, throw them in the inner gold ring of the $(ritual_circle) and right click the $(hallowed_iron) in the centre with an empty hand. $(br)Items you just threw should disappear in a cloud of smoke and the crafted $(spell) should appear above in place of it! $(br)After the ritual, each $(crystalised_redstone_block) crystals will be drained and candles will be snuffed out.$(br)$(l:resources/crystalised_redstone)$(bold)$(italic)Recharge them$() and light up the candles to start a new ritual."
+    }
+  ]
+}

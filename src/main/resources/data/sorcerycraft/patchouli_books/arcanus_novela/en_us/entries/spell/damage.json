@@ -1,13 +1,13 @@
 {
   "name": "Damage",
-  "icon": "sorcerycraft:spell",
+  "icon": "sorcerycraft:blank_scroll",
   "category": "sorcerycraft:spell",
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "sorcerycraft:spell",
+      "item": "sorcerycraft:projectile_spell",
       "title": "Damage",
-      "text": "$(bold)COST: Lv1 = $(spell) + $(#FF4823)Magma Block$() $(br)$(bold)Lv2 = $(spell) + Wither Rose $(br2)$(bold)MAX LEVEL:$() $(#green)2$()$(br2)$(bold)XP COST:$() 【 Lv1 = $(#green)4$() 】•【 Lv2 = $(#green)8$() 】 $(br2)$(italic)''The most basic combat spell at your disposal, fairly easy to craft but powerful''$()"
+      "text": "$(bold)TYPE:$() $(l:mechanics/spells_types)Projectile$() $(br)$(bold)COST: Lv1 = $(spell) + $(#FF4823)Magma Block$() $(br)$(bold)Lv2 = $(spell) + Wither Rose $(br)$(bold)MAX LEVEL:$() $(#green)2$()$(br)$(bold)XP COST:$() 【 Lv1 = $(#green)4$() 】•【 Lv2 = $(#green)8$() 】 $(br2)$(italic)''The most basic combat spell at your disposal, fairly easy to craft but powerful''$()"
     },
     {
       "type": "patchouli:text",
