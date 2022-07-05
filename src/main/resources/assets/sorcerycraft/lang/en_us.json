@@ -28,6 +28,9 @@
 
     "stat.sorcerycraft.cast_spell": "Spells Casted",
 
+    "sorcerycraft.subtitles.item.spell.discovered": "Spell Discovered",
+    "sorcerycraft.subtitles.item.spell.cast": "Spell Cast",
+
     "text.sorcerycraft.guide_book.fail": "You may not read these scriptures without Patchouli installed",
 
     "text.autoconfig.sorcerycraft.title": "SorceryCraft Config",
