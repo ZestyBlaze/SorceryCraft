@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "sorcerycraft:item/spell"
+    "layer0": "sorcerycraft:item/multi_type_spell"
   }
 }

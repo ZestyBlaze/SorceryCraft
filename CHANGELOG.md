@@ -15,6 +15,7 @@
 * Package refactor for better understanding
 * Updated the API documentation for the new features
 * Changes the way the sounds work to let there be custom subtitles for user's with hearing troubles
+* Change the textures for spells so each spell type has their own texture
 
 **1.1.2-beta**
 * Hotfix for book not working in 1.19 (+ made it the same for 1.18 to make it consistent across versions)
