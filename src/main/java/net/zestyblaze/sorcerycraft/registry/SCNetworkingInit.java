@@ -6,7 +6,6 @@ import net.zestyblaze.sorcerycraft.SorceryCraft;
 import net.zestyblaze.sorcerycraft.network.SpawnSmokeParticlesPacket;
 import net.zestyblaze.sorcerycraft.network.UpdateKnownSpellsS2CPacket;
 
-@SuppressWarnings("deprecation")
 public class SCNetworkingInit {
     public static void registerClientNetworks() {
         ClientPlayNetworking.registerGlobalReceiver(SpawnSmokeParticlesPacket.ID, SpawnSmokeParticlesPacket::handle);

@@ -83,6 +83,28 @@ public class SpellHelper {
         return map;
     }
 
+<<<<<<< Updated upstream:src/main/java/net/zestyblaze/sorcerycraft/util/SpellHelper.java
+=======
+    public static Component getTranslatedSpellType(ResourceLocation id, int level) {
+        Spell spell = SpellRegistry.getSpell(id, level);
+        MutableComponent text;
+        if(spell != null) {
+            SpellType spellType = spell.getSpellType();
+            if(spellType != null) {
+                switch (spellType) {
+                    case SELF -> text = Component.translatable("spellType.self");
+                    case PROJECTILE -> text = Component.translatable("spellType.projectile");
+                    case BOTH -> text = Component.translatable("spellType.both");
+                    default -> throw new IllegalStateException("Unexpected value: " + spellType);
+                }
+                text.withStyle(ChatFormatting.GREEN);
+                return text;
+            }
+        }
+        return null;
+    }
+
+>>>>>>> Stashed changes:src/main/java/net/zestyblaze/sorcerycraft/api/util/SpellHelper.java
     public static @NotNull Component getTranslatedSpell(ResourceLocation id, int level) {
         Spell spell = SpellRegistry.getSpell(id, level);
         MutableComponent text;
@@ -121,7 +143,10 @@ public class SpellHelper {
                     assert world.getServer() != null;
                     Component text = getTranslatedSpellChat(spell.getID(), spell.getLevel());
                     world.getServer().getPlayerList().broadcastSystemMessage(Component.translatable("chat." + SorceryCraft.MODID + ".discovered_spell", player.getDisplayName(), text), ChatType.SYSTEM);
+<<<<<<< Updated upstream:src/main/java/net/zestyblaze/sorcerycraft/util/SpellHelper.java
 
+=======
+>>>>>>> Stashed changes:src/main/java/net/zestyblaze/sorcerycraft/api/util/SpellHelper.java
                 }
             }
         }
