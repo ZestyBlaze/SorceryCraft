@@ -1,13 +1,13 @@
 {
   "name": "Lightning",
-  "icon": "sorcerycraft:spell",
+  "icon": "sorcerycraft:blank_scroll",
   "category": "sorcerycraft:spell",
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "sorcerycraft:spell",
+      "item": "sorcerycraft:projectile_spell",
       "title": "Lightning",
-      "text": "$(bold)COST: $(spell) + $(#AC8C0B)End Rod$()$(br2)$(bold)MAX LEVEL:$() $(#green)1$()$(br2)$(bold)XP COST:$() $(#green)18$()$(br2)$(italic)''A powerful combat spell, upon being struck by a lightning projectile and the spell succeeds, the spell will strike you with a bolt of lighting''$()"
+      "text": "$(bold)TYPE:$() $(l:mechanics/spells_types)Projectile$() $(br)$(bold)COST: $(spell) + $(#AC8C0B)End Rod$()$(br)$(bold)MAX LEVEL:$() $(#green)1$()$(br)$(bold)XP COST:$() $(#green)18$()$(br2)$(italic)''A powerful combat spell, upon being struck by a lightning projectile and the spell succeeds, the spell will strike you with a bolt of lighting''$()"
     },
     {
       "type": "patchouli:text",

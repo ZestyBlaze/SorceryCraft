@@ -1,6 +1,7 @@
 package net.zestyblaze.sorcerycraft.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -13,33 +14,31 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.api.Spell;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.SpellType;
+import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
+import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 import net.zestyblaze.sorcerycraft.entity.SpellEntity;
 import net.zestyblaze.sorcerycraft.registry.SCStatInit;
-import net.zestyblaze.sorcerycraft.util.SoundUtil;
-import net.zestyblaze.sorcerycraft.util.SpellHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
-@Deprecated(forRemoval = true)
-public class SpellItem extends Item {
-    public SpellItem() {
+public class ProjectileSpellItem extends Item {
+    public ProjectileSpellItem() {
         super(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16).group(SorceryCraft.ITEM_GROUP));
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player playerEntity, @NotNull InteractionHand hand) {
         ItemStack itemStack = playerEntity.getItemInHand(hand);
-
         if (!world.isClientSide) {
-            SoundUtil.playSpellSound(playerEntity);
-
+            SpellSoundUtil.playSpellSound(playerEntity);
             playerEntity.awardStat(SCStatInit.CAST_SPELL_STAT);
-
             SpellEntity entity = new SpellEntity(world, playerEntity);
             entity.setItem(itemStack);
             entity.shootFromRotation(playerEntity, playerEntity.getXRot(), playerEntity.getYRot(), 0.0f, 1.5f, 1.0f);
@@ -49,7 +48,6 @@ public class SpellItem extends Item {
         if (!playerEntity.isCreative()) {
             itemStack.shrink(1);
         }
-
         return new InteractionResultHolder<>(InteractionResult.SUCCESS, itemStack);
     }
 
@@ -61,36 +59,29 @@ public class SpellItem extends Item {
 
     @Override
     public boolean isFoil(@NotNull ItemStack stack) {
-        Map<ResourceLocation, Integer> spells = SpellHelper.getSpells(stack);
-        return spells.size() > 0 || super.isFoil(stack);
+        return true;
     }
 
     @Override
     public void appendHoverText(@NotNull ItemStack itemStack, Level world, @NotNull List<Component> tooltip, @NotNull TooltipFlag tooltipContext) {
         Map<ResourceLocation, Integer> spells = SpellHelper.getSpells(itemStack);
         for (Map.Entry<ResourceLocation, Integer> entry : spells.entrySet()) {
-<<<<<<< Updated upstream:src/main/java/net/zestyblaze/sorcerycraft/item/SpellItem.java
-            tooltip.add(SpellHelper.getTranslatedSpell(entry.getKey(), entry.getValue()));
-=======
             tooltip.add(Component.translatable("spell.type").withStyle(ChatFormatting.GRAY).append(Objects.requireNonNull(SpellHelper.getTranslatedSpellType(entry.getKey(), entry.getValue()))));
->>>>>>> Stashed changes:src/main/java/net/zestyblaze/sorcerycraft/item/ProjectileSpellItem.java
         }
     }
 
     @Override
     public void fillItemCategory(@NotNull CreativeModeTab group, @NotNull NonNullList<ItemStack> stacks) {
         if(allowedIn(group)) {
-<<<<<<< Updated upstream:src/main/java/net/zestyblaze/sorcerycraft/item/SpellItem.java
-            stacks.add(new ItemStack(this));
-=======
->>>>>>> Stashed changes:src/main/java/net/zestyblaze/sorcerycraft/item/ProjectileSpellItem.java
             Spell[] spells = SpellRegistry.getSpells();
             for (Spell value : spells) {
-                ItemStack item = new ItemStack(this);
-                Map<ResourceLocation, Integer> spell = new HashMap<>();
-                spell.put(value.getID(), value.getLevel());
-                SpellHelper.setSpells(item, spell);
-                stacks.add(item);
+                if(value.getSpellType() == SpellType.PROJECTILE) {
+                    ItemStack item = new ItemStack(this);
+                    Map<ResourceLocation, Integer> spell = new HashMap<>();
+                    spell.put(value.getID(), value.getLevel());
+                    SpellHelper.setSpells(item, spell);
+                    stacks.add(item);
+                }
             }
         }
     }
@@ -108,5 +99,15 @@ public class SpellItem extends Item {
 
             SpellHelper.learnSpells(player, itemSpells);
         }
+    }
+
+    @Override
+    public Component getName(ItemStack stack) {
+        Map<ResourceLocation, Integer> spells = SpellHelper.getSpells(stack);
+        Component name = null;
+        for (Map.Entry<ResourceLocation, Integer> entry : spells.entrySet()) {
+            name = SpellHelper.getTranslatedSpell(entry.getKey(), entry.getValue());
+        }
+        return name;
     }
 }

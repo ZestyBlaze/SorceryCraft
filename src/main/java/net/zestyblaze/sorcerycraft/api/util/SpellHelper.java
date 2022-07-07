@@ -1,4 +1,4 @@
-package net.zestyblaze.sorcerycraft.util;
+package net.zestyblaze.sorcerycraft.api.util;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -7,20 +7,31 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.api.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
+import net.zestyblaze.sorcerycraft.api.spell.SpellType;
+import net.zestyblaze.sorcerycraft.config.SCModConfig;
 import net.zestyblaze.sorcerycraft.registry.SCCriteriaInit;
+import net.zestyblaze.sorcerycraft.registry.SCMobEffectInit;
+import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class SpellHelper {
     public static final String SPELL_TAG = "Spells";
+
+    public static boolean didSpellSucceed(Entity entity) {
+        return ((Player)Objects.requireNonNull(entity)).isCreative() || Math.random() > SCModConfig.get().failureChance || ((LivingEntity)Objects.requireNonNull(entity)).hasEffect(SCMobEffectInit.STEADFAST);
+    }
 
     public static void setSpells(@NotNull ItemStack itemStack, Map<ResourceLocation, Integer> map) {
         CompoundTag tag;
@@ -83,8 +94,7 @@ public class SpellHelper {
         return map;
     }
 
-<<<<<<< Updated upstream:src/main/java/net/zestyblaze/sorcerycraft/util/SpellHelper.java
-=======
+
     public static Component getTranslatedSpellType(ResourceLocation id, int level) {
         Spell spell = SpellRegistry.getSpell(id, level);
         MutableComponent text;
@@ -104,7 +114,7 @@ public class SpellHelper {
         return null;
     }
 
->>>>>>> Stashed changes:src/main/java/net/zestyblaze/sorcerycraft/api/util/SpellHelper.java
+
     public static @NotNull Component getTranslatedSpell(ResourceLocation id, int level) {
         Spell spell = SpellRegistry.getSpell(id, level);
         MutableComponent text;
@@ -113,7 +123,6 @@ public class SpellHelper {
         } else {
             text = Spell.getDefaultTranslation(id, level);
         }
-        text.withStyle(ChatFormatting.GRAY);
         return text;
     }
 
@@ -143,15 +152,11 @@ public class SpellHelper {
                     assert world.getServer() != null;
                     Component text = getTranslatedSpellChat(spell.getID(), spell.getLevel());
                     world.getServer().getPlayerList().broadcastSystemMessage(Component.translatable("chat." + SorceryCraft.MODID + ".discovered_spell", player.getDisplayName(), text), ChatType.SYSTEM);
-<<<<<<< Updated upstream:src/main/java/net/zestyblaze/sorcerycraft/util/SpellHelper.java
-
-=======
->>>>>>> Stashed changes:src/main/java/net/zestyblaze/sorcerycraft/api/util/SpellHelper.java
                 }
             }
         }
         if (changed) {
-            SoundUtil.playSpellSound(player);
+            SpellSoundUtil.playSpellSoundDiscoverSound(player);
             spellPlayer.setDiscoveredSpells(playerSpells);
             SCCriteriaInit.DISCOVER_ALL_SPELLS_CRITERION.trigger((ServerPlayer)player);
         }

@@ -1,13 +1,13 @@
 {
   "name": "Flame",
-  "icon": "sorcerycraft:spell",
+  "icon": "sorcerycraft:blank_scroll",
   "category": "sorcerycraft:spell",
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "sorcerycraft:spell",
+      "item": "sorcerycraft:projectile_spell",
       "title": "Flame",
-      "text": "$(bold)COST: Lv1 = $(spell) + Flint and Steel$(br)$(bold)Lv2 = $(spell) + $(#8b2614)Fire Charge$() $(br2)$(bold)MAX LEVEL:$() $(#green)2$()$(br2)$(bold)XP COST:$() 【 Lv1 = $(#green)8$() 】•【 Lv2 = $(#green)12$()$(br2)$(italic)''Your go-to for combat and cooking food. The flame spell has useful utility within and out of combat''$()"
+      "text": "$(bold)TYPE:$() $(l:mechanics/spells_types)Projectile$() $(br)$(bold)COST: Lv1 = $(spell) + Flint and Steel$(br)$(bold)Lv2 = $(spell) + $(#8b2614)Fire Charge$() $(br)$(bold)MAX LEVEL:$() $(#green)2$()$(br)$(bold)XP COST:$() 【 Lv1 = $(#green)8$() 】•【 Lv2 = $(#green)12$()$(br2)$(italic)''Your go-to for combat and cooking food. The flame spell has useful utility within and out of combat''$()"
     },
     {
       "type": "patchouli:text",

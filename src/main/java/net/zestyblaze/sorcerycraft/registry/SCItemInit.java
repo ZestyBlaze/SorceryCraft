@@ -5,10 +5,9 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.item.CrystalisedRedstoneItem;
-import net.zestyblaze.sorcerycraft.item.GuideBookItem;
-import net.zestyblaze.sorcerycraft.item.SpellItem;
+import net.zestyblaze.sorcerycraft.item.*;
 
 public class SCItemInit {
     public static Item ARCANUS_NOVELLA = new GuideBookItem(new FabricItemSettings().maxCount(1).group(SorceryCraft.ITEM_GROUP));
@@ -18,7 +17,10 @@ public class SCItemInit {
     public static Item CRYSTALISED_REDSTONE_BLOCK = new BlockItem(SCBlockInit.CRYSTALISED_REDSTONE_BLOCK, new FabricItemSettings().group(SorceryCraft.ITEM_GROUP));
     public static Item DRAINED_CRYSTALISED_REDSTONE_BLOCK = new BlockItem(SCBlockInit.DRAINED_CRYSTALISED_REDSTONE_BLOCK, new FabricItemSettings().group(SorceryCraft.ITEM_GROUP));
     public static Item CRYSTALISED_REDSTONE = new CrystalisedRedstoneItem(new FabricItemSettings().group(SorceryCraft.ITEM_GROUP));
-    public static Item SPELL_ITEM = new SpellItem();
+    public static Item BLANK_SCROLL = new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON).group(SorceryCraft.ITEM_GROUP));
+    public static Item SELF_SPELL = new SelfUseSpellItem();
+    public static Item PROJECTILE_SPELL = new ProjectileSpellItem();
+    public static Item MULTI_TYPE_SPELL = new MultiTypeSpellItem();
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "arcanus_novela"), ARCANUS_NOVELLA);
@@ -28,6 +30,9 @@ public class SCItemInit {
         Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "crystalised_redstone_block"), CRYSTALISED_REDSTONE_BLOCK);
         Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "drained_crystalised_redstone_block"), DRAINED_CRYSTALISED_REDSTONE_BLOCK);
         Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "crystalised_redstone"), CRYSTALISED_REDSTONE);
-        Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "spell"), SPELL_ITEM);
+        Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "blank_scroll"), BLANK_SCROLL);
+        Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "self_use_spell"), SELF_SPELL);
+        Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "projectile_spell"), PROJECTILE_SPELL);
+        Registry.register(Registry.ITEM, new ResourceLocation(SorceryCraft.MODID, "multi_type_spell"), MULTI_TYPE_SPELL);
     }
 }

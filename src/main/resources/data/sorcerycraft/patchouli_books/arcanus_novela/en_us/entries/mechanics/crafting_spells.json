@@ -1,7 +1,7 @@
 {
   "name": "Spell Crafting",
   "icon": "sorcerycraft:crystalised_redstone",
-  "category": "sorcerycraft:ritual",
+  "category": "sorcerycraft:mechanics",
   "pages": [
     {
       "type": "patchouli:text",

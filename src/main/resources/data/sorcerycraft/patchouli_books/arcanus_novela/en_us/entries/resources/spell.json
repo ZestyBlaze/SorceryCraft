@@ -1,19 +1,19 @@
 {
-  "name": "Spell",
-  "icon": "sorcerycraft:spell",
+  "name": "Blank Scroll",
+  "icon": "sorcerycraft:blank_scroll",
   "category": "sorcerycraft:resources",
   "sortnum": 5,
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "sorcerycraft:spell",
-      "title": "Spell",
+      "item": "sorcerycraft:blank_scroll",
+      "title": "Blank Scroll",
       "text": "A $(spell) is introduced by $(sorcerycraft) and are used in the conception of $(spells) scrolls that you can then cast. $(br2)An empty $(spell) scroll can be crafted with $(bold)4x Lapis Lazuli$() and $(bold)1x Paper$(). $(br)See the recipe on the opposite page."
     },
     {
       "type": "patchouli:crafting",
-      "title": "Spell",
-      "recipe": "sorcerycraft:spell"
+      "title": "Blank Scroll",
+      "recipe": "sorcerycraft:blank_scroll"
     }
   ]
 }

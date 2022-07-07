@@ -9,7 +9,9 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.providers.number.BinomialDistributionGenerator;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.util.RandomSpellLootTableFunction;
+import net.zestyblaze.sorcerycraft.util.RandomMultiTypeSpellLootTableFunction;
+import net.zestyblaze.sorcerycraft.util.RandomProjectileSpellLootTableFunction;
+import net.zestyblaze.sorcerycraft.util.RandomSelfSpellLootTableFunction;
 
 public class SCLootInit {
     public static final ResourceLocation[] LOOT_TABLES = new ResourceLocation[]{
@@ -37,15 +39,6 @@ public class SCLootInit {
     }
 
     public static void registerLootTables() {
-<<<<<<< Updated upstream
-        LootTableEvents.MODIFY.register(((resourceManager, manager, id, supplier, setter) -> {
-            if(setter.isBuiltin() && isSelectedLootTable(id)) {
-                LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(BinomialDistributionGenerator.binomial(2, 0.5f))
-                        .with(LootItem.lootTableItem(SCItemInit.SPELL_ITEM).build())
-                        .apply(new RandomSpellLootTableFunction.Builder().build());
-                supplier.withPool(poolBuilder);
-=======
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(source.isBuiltin() && isSelectedLootTable(id)) {
                 LootPool.Builder poolBuilder = LootPool.lootPool()
@@ -73,13 +66,14 @@ public class SCLootInit {
                         .with(LootItem.lootTableItem(SCItemInit.MULTI_TYPE_SPELL).build())
                         .apply(new RandomMultiTypeSpellLootTableFunction.Builder().build());
                 tableBuilder.withPool(poolBuilder);
->>>>>>> Stashed changes
             }
         }));
 
     }
 
     public static void registerLootFunctions() {
-        Registry.register(Registry.LOOT_FUNCTION_TYPE, new ResourceLocation(SorceryCraft.MODID, "random_spell"), new LootItemFunctionType(new RandomSpellLootTableFunction.Factory()));
+        Registry.register(Registry.LOOT_FUNCTION_TYPE, new ResourceLocation(SorceryCraft.MODID, "random_projectile_spell"), new LootItemFunctionType(new RandomProjectileSpellLootTableFunction.Factory()));
+        Registry.register(Registry.LOOT_FUNCTION_TYPE, new ResourceLocation(SorceryCraft.MODID, "random_self_spell"), new LootItemFunctionType(new RandomSelfSpellLootTableFunction.Factory()));
+        Registry.register(Registry.LOOT_FUNCTION_TYPE, new ResourceLocation(SorceryCraft.MODID, "random_multi_type_spell"), new LootItemFunctionType(new RandomMultiTypeSpellLootTableFunction.Factory()));
     }
 }

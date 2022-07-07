@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "sorcerycraft:self_use_spell",
+    "sorcerycraft:projectile_spell",
+    "sorcerycraft:multi_type_spell"
+  ]
+}

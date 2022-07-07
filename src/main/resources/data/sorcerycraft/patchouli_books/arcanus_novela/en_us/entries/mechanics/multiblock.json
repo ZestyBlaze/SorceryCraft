@@ -1,13 +1,13 @@
 {
   "name": "Ritual Structure",
   "icon": "sorcerycraft:crystalised_redstone_block",
-  "category": "sorcerycraft:ritual",
+  "category": "sorcerycraft:mechanics",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "item": "sorcerycraft:crystalised_redstone_block",
       "title": "Ritual Circle",
-      "text": "In order to craft your own $(spells), you will need to build a $(ritual_circle) in your world.$(br)Build the structure from the opposite page in the world, then you can follow the instructions from the $(l:ritual/crafting_spells)$(bold)$(italic)'Crafting Spells'$() entry on how to craft the spell you want!"
+      "text": "In order to craft your own $(spells), you will need to build a $(ritual_circle) in your world.$(br)Build the structure from the opposite page in the world, then you can follow the instructions from the $(l:mechanics/crafting_spells)$(bold)$(italic)'Crafting Spells'$() entry on how to craft the spell you want!"
     },
     {
       "type": "patchouli:multiblock",

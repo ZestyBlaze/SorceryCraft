@@ -3,7 +3,7 @@ package net.zestyblaze.sorcerycraft.mixin;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
 import net.zestyblaze.sorcerycraft.network.UpdateKnownSpellsS2CPacket;
-import net.zestyblaze.sorcerycraft.util.SpellHelper;
+import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
 import net.zestyblaze.sorcerycraft.util.SpellServerPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;

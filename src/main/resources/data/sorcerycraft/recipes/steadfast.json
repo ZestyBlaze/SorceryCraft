@@ -5,11 +5,11 @@
       "item": "netherite_ingot"
     },
     {
-      "item": "sorcerycraft:spell"
+      "item": "sorcerycraft:blank_scroll"
     }
   ],
   "result": {
-    "item": "sorcerycraft:spell",
+    "item": "sorcerycraft:self_use_spell",
     "data": {
       "Spells": [
         {

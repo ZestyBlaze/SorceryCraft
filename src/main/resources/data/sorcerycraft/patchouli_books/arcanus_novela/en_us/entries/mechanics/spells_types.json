@@ -1,0 +1,15 @@
+{
+  "name": "Spells Types",
+  "icon": "sorcerycraft:projectile_spell",
+  "category": "sorcerycraft:mechanics",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "In $(sorcerycraft), $(spells) are split between several types, allowing a wide range of use case for each crafted spell. $(br2)The $(bold)Spell Type$() is shown on the tooltip of each spell scroll when hovered. $(br2)The $(book) also provides information on the Spell Type on each $(spells) page."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)➜ Self Use:$() The spell is cast on the caster themself, allowing them to apply different effects on their character. $(br2)$(bold)➜ Projectile:$() The spell creates a projectile orb being cast towards a target. $(br2)$(bold)➜ Multi Type:$() The spell, by default, is cast towards a target. If you sneak, the effect(s) of the spell can be applied to the caster themself."
+    }
+  ]
+}

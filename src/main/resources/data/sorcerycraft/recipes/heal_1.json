@@ -5,11 +5,11 @@
       "item": "white_bed"
     },
     {
-      "item": "sorcerycraft:spell"
+      "item": "sorcerycraft:blank_scroll"
     }
   ],
   "result": {
-    "item": "sorcerycraft:spell",
+    "item": "sorcerycraft:multi_type_spell",
     "data": {
       "Spells": [
         {

@@ -15,7 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.util.SpellHelper;
+import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
 
 public class UpdateKnownSpellsS2CPacket {

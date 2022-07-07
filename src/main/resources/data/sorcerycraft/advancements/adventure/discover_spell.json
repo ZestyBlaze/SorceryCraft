@@ -2,7 +2,7 @@
   "parent": "minecraft:adventure/root",
   "display": {
     "icon": {
-      "item": "sorcerycraft:spell"
+      "item": "sorcerycraft:blank_scroll"
     },
     "title": {
       "translate": "advancements.sorcerycraft.adventure.discover_spell.title"
@@ -16,23 +16,20 @@
     "hidden": false
   },
   "criteria": {
-    "sorcerycraft:spell": {
+    "get_spell": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "sorcerycraft:spell"
-            ]
+            "tag": "sorcerycraft:spells/spell_items"
           }
         ]
       }
     }
   },
-  "rewards": {
-    "recipes": [
-      "sorcerycraft:spell",
-      "sorcerycraft:casting_table"
+  "requirements": [
+    [
+      "get_spell"
     ]
-  }
+  ]
 }

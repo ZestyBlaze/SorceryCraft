@@ -18,20 +18,18 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.zestyblaze.sorcerycraft.api.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
-import net.zestyblaze.sorcerycraft.config.SCModConfig;
 import net.zestyblaze.sorcerycraft.registry.SCEntityInit;
 import net.zestyblaze.sorcerycraft.registry.SCItemInit;
 import net.zestyblaze.sorcerycraft.registry.SCMobEffectInit;
-import net.zestyblaze.sorcerycraft.util.SpellHelper;
+import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-@Deprecated
 public class SpellEntity extends ThrowableItemProjectile {
     public SpellEntity(EntityType<SpellEntity> entityType, Level level) {
         super(entityType, level);
@@ -49,17 +47,13 @@ public class SpellEntity extends ThrowableItemProjectile {
         super(SCEntityInit.SPELL_ENTITY, world);
     }
 
-    private boolean didSpellSucceed() {
-        return ((Player) Objects.requireNonNull(getOwner())).isCreative() || Math.random() > SCModConfig.get().failureChance || ((LivingEntity) Objects.requireNonNull(getOwner())).hasEffect(SCMobEffectInit.STEADFAST);
-    }
-
     @Override
     protected void onHit(@NotNull HitResult hitResult) {
         super.onHit(hitResult);
         if (!getLevel().isClientSide) {
             Map<ResourceLocation, Integer> spells = SpellHelper.getSpells(getItem());
             if (!((LivingEntity)Objects.requireNonNull(getOwner())).hasEffect(SCMobEffectInit.INWARD)) {
-                boolean success = didSpellSucceed();
+                boolean success = SpellHelper.didSpellSucceed(getOwner());
                 for (Map.Entry<ResourceLocation, Integer> entry : spells.entrySet()) {
                     Spell spell = SpellRegistry.getSpell(entry);
                     if (spell != null) {
@@ -91,7 +85,7 @@ public class SpellEntity extends ThrowableItemProjectile {
             Map<ResourceLocation, Integer> spells = SpellHelper.getSpells(getItem());
             if (((LivingEntity) Objects.requireNonNull(getOwner())).hasEffect(SCMobEffectInit.INWARD)) {
                 if (getOwner() != null) {
-                    boolean success = didSpellSucceed();
+                    boolean success = SpellHelper.didSpellSucceed(getOwner());
                     for (Map.Entry<ResourceLocation, Integer> entry : spells.entrySet()) {
                         Spell spell = SpellRegistry.getSpell(entry);
                         if (spell != null) {
@@ -116,7 +110,7 @@ public class SpellEntity extends ThrowableItemProjectile {
 
     @Override
     protected Item getDefaultItem() {
-        return SCItemInit.SPELL_ITEM;
+        return SCItemInit.PROJECTILE_SPELL;
     }
 
     @Override

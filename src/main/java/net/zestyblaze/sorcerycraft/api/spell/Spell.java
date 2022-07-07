@@ -1,9 +1,10 @@
-package net.zestyblaze.sorcerycraft.api;
+package net.zestyblaze.sorcerycraft.api.spell;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
@@ -11,14 +12,23 @@ import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 /**
  * Spell Implementation Base Class
  */
-@Deprecated
 public abstract class Spell {
     private final ResourceLocation id;
     private final int level;
+    private SpellType spellType;
 
-    public Spell(ResourceLocation id, int level) {
+    public Spell(ResourceLocation id, int level, SpellType spellType) {
         this.id = id;
         this.level = level;
+        this.spellType = spellType;
+    }
+
+    /**
+     * Get the SpellType for this spell
+     * @return SpellType of this spell
+     */
+    public SpellType getSpellType() {
+        return spellType;
     }
 
     /**
@@ -56,6 +66,16 @@ public abstract class Spell {
      * @param hitResult The block's HitResult
      */
     public void execute(Level world, Entity source, Entity attacker, BlockHitResult hitResult) {
+        // OPTIONAL
+    }
+
+    /**
+     * Execute this spell on the caster
+     * @param world World
+     * @param source A SpellEntity
+     * @param self The Entity that cast this spell
+     */
+    public void execute(Level world, ItemStack source, Entity self) {
         // OPTIONAL
     }
 

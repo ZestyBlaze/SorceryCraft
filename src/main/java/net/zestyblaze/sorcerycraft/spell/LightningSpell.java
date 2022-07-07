@@ -9,11 +9,12 @@ import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
-import net.zestyblaze.sorcerycraft.api.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.SpellType;
 
 public class LightningSpell extends Spell {
     public LightningSpell(ResourceLocation id, int level) {
-        super(id, level);
+        super(id, level, SpellType.PROJECTILE);
     }
 
     @Override

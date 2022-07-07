@@ -11,46 +11,49 @@ import net.minecraft.world.level.storage.loot.functions.LootItemFunction;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.api.Spell;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.SpellType;
+import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
-public class RandomSpellLootTableFunction extends LootItemConditionalFunction {
-    public RandomSpellLootTableFunction(LootItemCondition[] conditions) {
+public class RandomProjectileSpellLootTableFunction extends LootItemConditionalFunction {
+    public RandomProjectileSpellLootTableFunction(LootItemCondition[] conditions) {
         super(conditions);
     }
 
     @Override
     protected ItemStack run(@NotNull ItemStack stack, LootContext context) {
-        double chance = 1.0d;
-        while (!(context.getRandom().nextDouble() > chance)) {
+        while (true) {
+            context.getRandom().nextDouble();
             Spell[] spells = SpellRegistry.getSpells();
             int index = context.getRandom().nextInt(spells.length);
             Map<ResourceLocation, Integer> spell = SpellHelper.getSpells(stack);
-            spell.put(spells[index].getID(), spells[index].getLevel());
-            SpellHelper.setSpells(stack, spell);
-            chance = chance * 0.25d;
+            if(spells[index].getSpellType() == SpellType.PROJECTILE) {
+                spell.put(spells[index].getID(), spells[index].getLevel());
+                SpellHelper.setSpells(stack, spell);
+                return stack;
+            }
         }
-        return stack;
     }
 
     @Override
     public LootItemFunctionType getType() {
-        return Registry.LOOT_FUNCTION_TYPE.get(new ResourceLocation(SorceryCraft.MODID, "random_spell"));
+        return Registry.LOOT_FUNCTION_TYPE.get(new ResourceLocation(SorceryCraft.MODID, "random_projectile_spell"));
     }
 
-    public static class Factory extends LootItemConditionalFunction.Serializer<RandomSpellLootTableFunction> {
+    public static class Factory extends LootItemConditionalFunction.Serializer<RandomProjectileSpellLootTableFunction> {
         public Factory() {}
 
         @Override
-        public RandomSpellLootTableFunction deserialize(@NotNull JsonObject object, @NotNull JsonDeserializationContext deserializationContext, LootItemCondition @NotNull [] conditions) {
-            return (RandomSpellLootTableFunction)new Builder().build();
+        public RandomProjectileSpellLootTableFunction deserialize(@NotNull JsonObject object, @NotNull JsonDeserializationContext deserializationContext, LootItemCondition @NotNull [] conditions) {
+            return (RandomProjectileSpellLootTableFunction)new Builder().build();
         }
     }
 
-    public static class Builder extends LootItemConditionalFunction.Builder<RandomSpellLootTableFunction.Builder> {
+    public static class Builder extends LootItemConditionalFunction.Builder<RandomProjectileSpellLootTableFunction.Builder> {
         @Override
         protected Builder getThis() {
             return this;
@@ -58,7 +61,7 @@ public class RandomSpellLootTableFunction extends LootItemConditionalFunction {
 
         @Override
         public LootItemFunction build() {
-            return new RandomSpellLootTableFunction(getConditions());
+            return new RandomProjectileSpellLootTableFunction(getConditions());
         }
     }
 }

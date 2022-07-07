@@ -8,11 +8,12 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.DirectionalPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
-import net.zestyblaze.sorcerycraft.api.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
+import net.zestyblaze.sorcerycraft.api.spell.SpellType;
 
 public class FlameSpell extends Spell {
     public FlameSpell(ResourceLocation id, int level) {
-        super(id, level);
+        super(id, level, SpellType.PROJECTILE);
     }
 
     @Override
