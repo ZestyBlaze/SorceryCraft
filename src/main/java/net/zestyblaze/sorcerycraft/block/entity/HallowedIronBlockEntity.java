@@ -25,13 +25,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 import net.zestyblaze.sorcerycraft.network.SpawnSmokeParticlesPacket;
 import net.zestyblaze.sorcerycraft.recipe.RitualRecipe;
 import net.zestyblaze.sorcerycraft.registry.SCBlockEntityInit;
 import net.zestyblaze.sorcerycraft.registry.SCCriteriaInit;
 import net.zestyblaze.sorcerycraft.registry.SCRecipeInit;
 import net.zestyblaze.sorcerycraft.util.MultiblockUtil;
-import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -142,7 +142,7 @@ public class HallowedIronBlockEntity extends BlockEntity implements Container {
             syncIron();
             return;
         }
-        level.playSound(null, pos, SoundEvents.PISTON_CONTRACT, SoundSource.BLOCKS, 1, 1);
+        level.playSound(null, pos, SoundEvents.ANVIL_BREAK, SoundSource.BLOCKS, 1, 1);
         if(user instanceof Player player) {
             player.displayClientMessage(Component.translatable("ritual.none"), true);
         }

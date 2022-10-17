@@ -1,5 +1,6 @@
 package net.zestyblaze.sorcerycraft.entity;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
@@ -18,12 +19,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.zestyblaze.sorcerycraft.api.spell.Spell;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
+import net.zestyblaze.sorcerycraft.api.spell.Spell;
+import net.zestyblaze.sorcerycraft.api.util.MagicHelper;
+import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
 import net.zestyblaze.sorcerycraft.registry.SCEntityInit;
 import net.zestyblaze.sorcerycraft.registry.SCItemInit;
 import net.zestyblaze.sorcerycraft.registry.SCMobEffectInit;
-import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -51,9 +53,9 @@ public class SpellEntity extends ThrowableItemProjectile {
     protected void onHit(@NotNull HitResult hitResult) {
         super.onHit(hitResult);
         if (!getLevel().isClientSide) {
-            Map<ResourceLocation, Integer> spells = SpellHelper.getSpells(getItem());
+            Map<ResourceLocation, Integer> spells = MagicHelper.getSpells(getItem());
             if (!((LivingEntity)Objects.requireNonNull(getOwner())).hasEffect(SCMobEffectInit.INWARD)) {
-                boolean success = SpellHelper.didSpellSucceed(getOwner());
+                boolean success = MagicHelper.didSpellSucceed(getOwner());
                 for (Map.Entry<ResourceLocation, Integer> entry : spells.entrySet()) {
                     Spell spell = SpellRegistry.getSpell(entry);
                     if (spell != null) {
@@ -66,8 +68,8 @@ public class SpellEntity extends ThrowableItemProjectile {
                                 spell.execute(level, this, getOwner(), entity);
                             }
                         } else if (getOwner() != null) {
-                            if (getOwner() instanceof Player player) {
-                                player.playNotifySound(SoundEvents.THORNS_HIT, SoundSource.PLAYERS, 1.0f, 1.0f);
+                            if (getOwner() instanceof Player) {
+                                SpellSoundUtil.playSpellFailSound(level, blockPosition());
                             }
                             spell.execute(level, this, getOwner(), getOwner());
                         }
@@ -82,17 +84,17 @@ public class SpellEntity extends ThrowableItemProjectile {
     public void tick() {
         super.tick();
         if (!getLevel().isClientSide) {
-            Map<ResourceLocation, Integer> spells = SpellHelper.getSpells(getItem());
+            Map<ResourceLocation, Integer> spells = MagicHelper.getSpells(getItem());
             if (((LivingEntity) Objects.requireNonNull(getOwner())).hasEffect(SCMobEffectInit.INWARD)) {
                 if (getOwner() != null) {
-                    boolean success = SpellHelper.didSpellSucceed(getOwner());
+                    boolean success = MagicHelper.didSpellSucceed(getOwner());
                     for (Map.Entry<ResourceLocation, Integer> entry : spells.entrySet()) {
                         Spell spell = SpellRegistry.getSpell(entry);
                         if (spell != null) {
                             if (success) {
                                 spell.execute(level, this, getOwner(), getOwner());
-                            } else if (getOwner() instanceof Player player) {
-                                player.playNotifySound(SoundEvents.THORNS_HIT, SoundSource.PLAYERS, 1.0f, 1.0f);
+                            } else if (getOwner() instanceof Player) {
+                                SpellSoundUtil.playSpellFailSound(level, blockPosition());
                             }
                         }
                     }

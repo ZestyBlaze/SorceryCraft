@@ -20,7 +20,10 @@ public class SCModConfig implements ConfigData {
     }
 
     @UsePercentage(min = 0, max = 1)
-    public double failureChance = 0.2;
+    public double spellFailureChance = 0.2;
+
+    @UsePercentage(min = 0, max = 1)
+    public double orbFailureChance = 0.4;
 
     public static SCModConfig get() {
         return AutoConfig.getConfigHolder(SCModConfig.class).getConfig();

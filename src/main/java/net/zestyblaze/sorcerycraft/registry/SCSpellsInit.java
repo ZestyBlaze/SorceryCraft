@@ -3,7 +3,7 @@ package net.zestyblaze.sorcerycraft.registry;
 import net.minecraft.resources.ResourceLocation;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
-import net.zestyblaze.sorcerycraft.spell.*;
+import net.zestyblaze.sorcerycraft.magic.spell.*;
 
 public class SCSpellsInit {
     public static ResourceLocation CLEANSE_SPELL;

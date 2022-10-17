@@ -7,8 +7,8 @@ import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DispenserBlock;
-import net.zestyblaze.sorcerycraft.entity.SpellEntity;
 import net.zestyblaze.sorcerycraft.api.util.SpellSoundUtil;
+import net.zestyblaze.sorcerycraft.entity.SpellEntity;
 
 public class SCBehaviourInit {
     public static void registerDispenserBehaviour() {
@@ -22,7 +22,7 @@ public class SCBehaviourInit {
 
             @Override
             protected void playSound(BlockSource source) {
-                SpellSoundUtil.playSpellSound(source);
+                SpellSoundUtil.playSpellSound(source.getLevel(), source.getPos());
             }
         });
     }

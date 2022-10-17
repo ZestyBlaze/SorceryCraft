@@ -1,25 +1,22 @@
 {
-    "itemGroup.sorcerycraft.spells": "SorceryCraft - Dispelled",
+    "itemGroup.sorcerycraft.sorcerycraft": "SorceryCraft - Dispelled",
 
     "item.sorcerycraft.arcanus_novela": "Arcanus Novela",
     "item.sorcerycraft.crystal": "Crystal",
     "item.sorcerycraft.crystalised_redstone": "Crystalised Redstone",
     "item.sorcerycraft.blank_scroll": "Blank Scroll",
-    "item.sorcerycraft.self_use_spell": "Spell",
-    "item.sorcerycraft.projectile_spell": "Spell",
-    "item.sorcerycraft.multi_type_spell": "Spell",
 
-    "spell.type": "Spell Type: ",
-    "spellType.self": "Self",
-    "spellType.projectile": "Projectile",
-    "spellType.both": "Multi Type",
+    "item.sorcerycraft.emptySpell": "Spell",
+    "item.sorcerycraft.emptyOrb": "Orb",
 
     "block.sorcerycraft.crystal_ore": "Crystal Ore",
     "block.sorcerycraft.hallowed_iron": "Hallowed Iron",
     "block.sorcerycraft.crystalised_redstone_block": "Crystalised Redstone Block",
     "block.sorcerycraft.drained_crystalised_redstone_block": "Drained Crystalised Redstone Block",
+    "block.sorcerycraft.shield_block": "Shield Block",
 
     "chat.sorcerycraft.discovered_spell": "%s has discovered the spell %s",
+    "chat.sorcerycraft.discovered_orb": "%s has discovered the orb %s",
 
     "entity.sorcerycraft.spell": "Spell",
 
@@ -27,9 +24,15 @@
     "effect.sorcerycraft.steadfast": "Steadfast",
 
     "stat.sorcerycraft.cast_spell": "Spells Casted",
+    "stat.sorcerycraft.cast_orb": "Orbs Casted",
 
     "sorcerycraft.subtitles.item.spell.discovered": "Spell Discovered",
     "sorcerycraft.subtitles.item.spell.cast": "Spell Cast",
+
+    "spell.type": "Spell Type: ",
+    "spellType.self": "Self",
+    "spellType.projectile": "Projectile",
+    "spellType.both": "Multi Type",
 
     "text.sorcerycraft.guide_book.fail": "You may not read these scriptures without Patchouli installed",
 
@@ -55,5 +58,7 @@
     "spell.sorcerycraft.teleport_spell": "Teleport",
     "spell.sorcerycraft.inward_spell": "Inward",
     "spell.sorcerycraft.cooling_spell": "Cooling",
-    "spell.sorcerycraft.lightning_spell": "Lightning"
+    "spell.sorcerycraft.lightning_spell": "Lightning",
+
+    "orb.sorcerycraft.shield_orb": "Shield"
 }

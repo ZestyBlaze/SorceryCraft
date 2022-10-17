@@ -12,5 +12,37 @@
       "minecraft:block/enchantment_table/enchant2"
     ],
     "subtitle": "sorcerycraft.subtitles.item.spell.cast"
+  },
+  "item.spell.fail": {
+    "sounds": [
+      "minecraft:enchant/thorns/hit1",
+      "minecraft:enchant/thorns/hit2",
+      "minecraft:enchant/thorns/hit3",
+      "minecraft:enchant/thorns/hit4"
+    ],
+    "subtitle": "sorcerycraft.subtitles.item.spell.fail"
+  },
+  "item.orb.discovered": {
+    "sounds": [
+      "minecraft:block/enchantment_table/enchant1",
+      "minecraft:block/enchantment_table/enchant2"
+    ],
+    "subtitle": "sorcerycraft.subtitles.item.orb.discovered"
+  },
+  "item.orb.cast": {
+    "sounds": [
+      "minecraft:block/enchantment_table/enchant1",
+      "minecraft:block/enchantment_table/enchant2"
+    ],
+    "subtitle": "sorcerycraft.subtitles.item.orb.cast"
+  },
+  "item.orb.fail": {
+    "sounds": [
+      "minecraft:enchant/thorns/hit1",
+      "minecraft:enchant/thorns/hit2",
+      "minecraft:enchant/thorns/hit3",
+      "minecraft:enchant/thorns/hit4"
+    ],
+    "subtitle": "sorcerycraft.subtitles.item.orb.fail"
   }
 }

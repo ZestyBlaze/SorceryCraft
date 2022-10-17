@@ -12,7 +12,8 @@ public class SCClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         SCAnnotationInit.registerAnnotations();
-        SCRendererInit.registerRenders();
+        SCRendererInit.registerEntityRenders();
+        SCRendererInit.registerBlockRenders();
         SCNetworkingInit.registerClientNetworks();
     }
 }

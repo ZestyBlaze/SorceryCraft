@@ -9,6 +9,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class SCStatInit {
     public static ResourceLocation CAST_SPELL_STAT;
+    public static ResourceLocation CAST_ORB_STAT;
 
     private static @NotNull ResourceLocation registerStat(String name) {
         ResourceLocation statID = new ResourceLocation(SorceryCraft.MODID, name);
@@ -19,5 +20,6 @@ public class SCStatInit {
 
     public static void registerStats() {
         CAST_SPELL_STAT = registerStat("cast_spell");
+        CAST_ORB_STAT = registerStat("cast_orb");
     }
 }

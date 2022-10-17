@@ -8,17 +8,17 @@ import net.minecraft.advancements.critereon.SimpleCriterionTrigger;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.zestyblaze.sorcerycraft.SorceryCraft;
-import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
-import net.zestyblaze.sorcerycraft.api.spell.Spell;
-import net.zestyblaze.sorcerycraft.util.SpellPlayerEntity;
+import net.zestyblaze.sorcerycraft.api.orb.Orb;
+import net.zestyblaze.sorcerycraft.api.registry.OrbRegistry;
+import net.zestyblaze.sorcerycraft.util.OrbPlayerEntity;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
-public class DiscoverAllSpellsCriterion extends SimpleCriterionTrigger<DiscoverAllSpellsCriterion.Conditions> {
-    private static final ResourceLocation ID = new ResourceLocation(SorceryCraft.MODID, "discover_all_spells");
+public class DiscoverAllOrbsCriterion extends SimpleCriterionTrigger<DiscoverAllOrbsCriterion.Conditions> {
+    private static final ResourceLocation ID = new ResourceLocation(SorceryCraft.MODID, "discover_all_orbs");
 
-    public DiscoverAllSpellsCriterion() {}
+    public DiscoverAllOrbsCriterion() {}
 
     @Override
     public ResourceLocation getId() {
@@ -26,18 +26,18 @@ public class DiscoverAllSpellsCriterion extends SimpleCriterionTrigger<DiscoverA
     }
 
     @Override
-    protected Conditions createInstance(@NotNull JsonObject json, EntityPredicate.@NotNull Composite player, @NotNull DeserializationContext context) {
-        return new Conditions(player);
+    protected DiscoverAllOrbsCriterion.Conditions createInstance(@NotNull JsonObject json, EntityPredicate.@NotNull Composite player, @NotNull DeserializationContext context) {
+        return new DiscoverAllOrbsCriterion.Conditions(player);
     }
 
     public void trigger(ServerPlayer player) {
         trigger(player, (conditions -> {
-            SpellPlayerEntity spellPlayer = (SpellPlayerEntity)player;
-            Map<ResourceLocation, Integer> spells = spellPlayer.getDiscoveredSpells();
-            Spell[] maxSpells = SpellRegistry.getMaxSpells();
+            OrbPlayerEntity orbPlayer = (OrbPlayerEntity)player;
+            Map<ResourceLocation, Integer> orbs = orbPlayer.getDiscoveredOrbs();
+            Orb[] maxOrbs = OrbRegistry.getMaxOrbs();
             boolean match = true;
-            for(Spell spell : maxSpells) {
-                if (!spells.containsKey(spell.getID()) || spells.get(spell.getID()) < (spell.getLevel() - 1)) {
+            for(Orb orb : maxOrbs) {
+                if (!orbs.containsKey(orb.getId()) || orbs.get(orb.getId()) < (orb.getLevel() - 1)) {
                     match = false;
                     break;
                 }

@@ -14,7 +14,7 @@ import net.zestyblaze.sorcerycraft.SorceryCraft;
 import net.zestyblaze.sorcerycraft.api.registry.SpellRegistry;
 import net.zestyblaze.sorcerycraft.api.spell.Spell;
 import net.zestyblaze.sorcerycraft.api.spell.SpellType;
-import net.zestyblaze.sorcerycraft.api.util.SpellHelper;
+import net.zestyblaze.sorcerycraft.api.util.MagicHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
@@ -30,10 +30,10 @@ public class RandomProjectileSpellLootTableFunction extends LootItemConditionalF
             context.getRandom().nextDouble();
             Spell[] spells = SpellRegistry.getSpells();
             int index = context.getRandom().nextInt(spells.length);
-            Map<ResourceLocation, Integer> spell = SpellHelper.getSpells(stack);
+            Map<ResourceLocation, Integer> spell = MagicHelper.getSpells(stack);
             if(spells[index].getSpellType() == SpellType.PROJECTILE) {
                 spell.put(spells[index].getID(), spells[index].getLevel());
-                SpellHelper.setSpells(stack, spell);
+                MagicHelper.setSpells(stack, spell);
                 return stack;
             }
         }
