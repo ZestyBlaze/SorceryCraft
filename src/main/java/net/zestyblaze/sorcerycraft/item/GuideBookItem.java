@@ -18,7 +18,6 @@ import vazkii.patchouli.common.base.PatchouliSounds;
 import vazkii.patchouli.common.book.Book;
 import vazkii.patchouli.common.book.BookRegistry;
 
-import javax.annotation.Nonnull;
 import java.util.List;
 
 public class GuideBookItem extends Item {
@@ -33,7 +32,6 @@ public class GuideBookItem extends Item {
         }
     }
 
-    @Nonnull
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player user, InteractionHand hand) {
         if(!FabricLoader.getInstance().isModLoaded("patchouli")) return InteractionResultHolder.fail(user.getItemInHand(hand));

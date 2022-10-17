@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'fabric-loom' version '1.0-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -12,6 +12,11 @@ group = project.maven_group
 
 repositories {
 	maven {
+		name "Parchment"
+		url "https://maven.parchmentmc.org"
+	}
+
+	maven {
 		name "Cloth Config"
 		url "https://maven.shedaniel.me/"
 	}
@@ -21,10 +26,6 @@ repositories {
 		url "https://maven.terraformersmc.com/"
 	}
 
-	maven {
-		name "Parchment"
-		url "https://maven.parchmentmc.org"
-	}
 
 	maven {
 		name "Siphalor's Maven"
